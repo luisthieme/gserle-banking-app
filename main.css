@@ -1,0 +1,72 @@
+body {
+  background-color: rgba(13, 36, 52, 255);
+  font-family: "Montserrat", sans-serif;
+}
+
+.test-div {
+  background-color: rgba(15, 47, 70, 255);
+  height: 80px;
+  width: 100%;
+}
+
+.calculator {
+  background-color: rgba(15, 47, 70, 255);
+  padding: 20px 40px 20px;
+  width: full;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 24px;
+}
+
+.calculator-heading {
+  color: rgb(247, 147, 51);
+  font-size: 24px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.calculator-input {
+  border-radius: 8px;
+  padding: 12px 8px 12px;
+}
+
+.calculator-input-heading {
+  color: white;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.main-content {
+  height: 100vh;
+  width: 65%;
+  max-width: 1200px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-bar-container {
+  background-color: rgba(15, 47, 70, 255);
+  height: 50px;
+  width: 90%;
+  margin: auto;
+  border-radius: 8px;
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.nav-bar-logo {
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0;
+  width: auto;
+}
