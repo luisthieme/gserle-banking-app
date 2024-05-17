@@ -12,7 +12,10 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="nav-bar-container"><h1 class="nav-bar-logo">5Minds</h1></div>
+    <div class="nav-bar-container">
+      <span class="nav-bar-logo-number">5</span>
+      <h1 class="nav-bar-logo-text">Minds</h1>
+    </div>
     <div class="main-content">
       <div class="calculator">
         <p class="calculator-heading">Zinsrechner</p>
@@ -24,9 +27,21 @@
         <input class="calculator-input" type="number" />
         <p class="calculator-input-heading">Endkapital</p>
         <input class="calculator-input" type="number" />
-        <button>Berechnen</button>
+        <button class="calculator-button" onclick="calculate()">
+          Berechnen
+        </button>
       </div>
-      <div class="test-div"></div>
+      <div class="result-container">
+        <p class="result-heading">Berechnung</p>
+        <div class="result">
+          <p class="result-title">Zinssatz p.a.</p>
+          <p class="result-value">4.73%</p>
+        </div>
+        <div class="result">
+          <p class="result-title">Zinssatz p.a.</p>
+          <p class="result-value">4.73%</p>
+        </div>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>

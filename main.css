@@ -11,13 +11,28 @@ body {
 
 .calculator {
   background-color: rgba(15, 47, 70, 255);
-  padding: 20px 40px 20px;
-  width: full;
+  padding: 30px 60px 30px;
   height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  border-radius: 24px;
+  border-radius: 20px;
+}
+
+.calculator-button {
+  background-color: rgba(22, 67, 98, 255);
+  margin-top: 16px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  padding: 16px;
+  color: rgb(247, 147, 51);
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+
+.calculator-button:hover {
+  background-color: rgb(29, 87, 125);
 }
 
 .calculator-heading {
@@ -30,6 +45,13 @@ body {
 .calculator-input {
   border-radius: 8px;
   padding: 12px 8px 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.calculator-input:focus {
+  outline: none;
 }
 
 .calculator-input-heading {
@@ -53,20 +75,56 @@ body {
 
 .nav-bar-container {
   background-color: rgba(15, 47, 70, 255);
-  height: 50px;
+  height: 60px;
   width: 90%;
   margin: auto;
-  border-radius: 8px;
+  border-radius: 12px;
   display: flex;
+  align-items: center;
   padding-left: 8px;
   padding-right: 8px;
 }
+.nav-bar-logo-number {
+  color: rgb(247, 147, 51);
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0;
+  width: auto;
+}
 
-.nav-bar-logo {
+.nav-bar-logo-text {
   color: white;
   font-size: 40px;
   font-weight: 500;
   letter-spacing: 2px;
   margin: 0;
   width: auto;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result-container {
+  background-color: rgba(15, 47, 70, 255);
+  padding: 30px 60px 30px;
+  border-radius: 20px;
+}
+
+.result-heading {
+  color: rgb(247, 147, 51);
+  font-size: 24px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.result-title {
+  color: white;
+  font-weight: 500;
+}
+
+.result-value {
+  color: rgb(247, 147, 51);
 }
