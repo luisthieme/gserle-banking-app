@@ -13,33 +13,33 @@
   </head>
   <body>
     <div class="nav-bar-container">
-      <span class="nav-bar-logo-number">5</span>
-      <h1 class="nav-bar-logo-text">Minds</h1>
+      <div class="nav-bar-container-left">
+        <span class="nav-bar-logo-number">5</span>
+        <h1 class="nav-bar-logo-text">Minds</h1>
+      </div>
+      <div class="nav-bar-container-middle">
+        <a class="nav-bar-link" href="">Zinsrechner</a>
+        <a class="nav-bar-link" href="">Sparrechner</a>
+        <a class="nav-bar-link" href="">Zinseszinsrechner</a>
+      </div>
+      <div class="nav-bar-container-right"></div>
     </div>
     <div class="main-content">
-      <div class="calculator">
+      <form id="form" class="calculator" onsubmit="calculate(event)">
         <p class="calculator-heading">Zinsrechner</p>
-        <p class="calculator-input-heading">Was möchtest du berechnen?</p>
-        <input class="calculator-input" type="text" />
         <p class="calculator-input-heading">Anfangskapital</p>
-        <input class="calculator-input" type="number" />
+        <input class="calculator-input" type="number" name="anfangskapital" />
         <p class="calculator-input-heading">Laufzeit in Jahren</p>
-        <input class="calculator-input" type="number" />
+        <input class="calculator-input" type="number" name="laufzeit" />
         <p class="calculator-input-heading">Endkapital</p>
-        <input class="calculator-input" type="number" />
-        <button class="calculator-button" onclick="calculate()">
-          Berechnen
-        </button>
-      </div>
+        <input class="calculator-input" type="number" name="endkapital" />
+        <button class="calculator-button" type="submit">Berechnen</button>
+      </form>
       <div class="result-container">
         <p class="result-heading">Berechnung</p>
         <div class="result">
           <p class="result-title">Zinssatz p.a.</p>
-          <p class="result-value">4.73%</p>
-        </div>
-        <div class="result">
-          <p class="result-title">Zinssatz p.a.</p>
-          <p class="result-value">4.73%</p>
+          <p class="result-value" id="result">-- %</p>
         </div>
       </div>
     </div>

@@ -76,14 +76,44 @@ body {
 .nav-bar-container {
   background-color: rgba(15, 47, 70, 255);
   height: 60px;
-  width: 90%;
-  margin: auto;
+  width: 95%;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 12px;
   display: flex;
   align-items: center;
   padding-left: 8px;
   padding-right: 8px;
 }
+
+.nav-bar-container-left {
+  width: 200px;
+  flex-shrink: 0;
+  display: flex;
+}
+
+.nav-bar-container-middle {
+  flex-grow: 1;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.nav-bar-container-right {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.nav-bar-link {
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px 12px;
+  border-style: solid;
+  border-color: rgb(28, 82, 120);
+  border-radius: 8px;
+}
+
 .nav-bar-logo-number {
   color: rgb(247, 147, 51);
   font-size: 40px;
