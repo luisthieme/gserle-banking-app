@@ -53,3 +53,5 @@ tailwind o. css:
 
 - maybe wenn das nicht zu viel komplexität added
 - man könnte bereits stylings entwerfen mit genauen farbtoenen.
+
+https://gs-erle-test.w3spaces.com/index.html
