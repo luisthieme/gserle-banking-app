@@ -1,0 +1,220 @@
+body {
+    background-color: rgba(13, 36, 52, 255);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.test-div {
+    background-color: rgba(15, 47, 70, 255);
+    height: 80px;
+    width: 100%;
+}
+
+.calculator {
+    background-color: rgba(15, 47, 70, 255);
+    padding: 30px 60px 30px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 8px;
+}
+
+.calculator-button {
+    background-color: rgba(22, 67, 98, 255);
+    margin-top: 16px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    padding: 16px;
+    color: rgb(247, 147, 51);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+.calculator-button:hover {
+    background-color: rgb(29, 87, 125);
+}
+
+.calculator-heading {
+    color: rgb(247, 147, 51);
+    font-size: 24px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.calculator-input {
+    border-radius: 8px;
+    padding: 12px 8px 12px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.calculator-input:focus {
+    outline: none;
+}
+
+.calculator-input-heading {
+    color: white;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.main-content {
+    height: fit-content;
+    width: 65%;
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 12px;
+}
+
+.main-content-calculator-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main-content-calculator-selection {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(15, 47, 70, 255);
+    padding-top: 8px;
+}
+
+.nav-bar-container {
+    background-color: rgba(15, 47, 70, 255);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar-container-middle {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar-link {
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px 12px;
+    border-style: solid;
+    border-color: rgb(28, 82, 120);
+    border-radius: 8px;
+}
+
+.nav-bar-logo-number {
+    width: fit-auto;
+    color: rgb(247, 147, 51);
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0;
+    width: auto;
+}
+
+.nav-bar-logo-text {
+    width: auto;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0;
+    width: auto;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-container {
+    background-color: rgba(15, 47, 70, 255);
+    padding: 30px 60px 30px;
+    border-radius: 8px;
+}
+
+.result-heading {
+    color: rgb(247, 147, 51);
+    font-size: 24px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.result-title {
+    color: white;
+    font-weight: 500;
+}
+
+.result-value {
+    color: rgb(247, 147, 51);
+}
+
+.selection-button {
+    background-color: rgba(22, 67, 98, 255);
+    margin: 8px 16px;
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+    color: rgb(247, 147, 51);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.selection-button:hover {
+    background-color: rgb(29, 87, 125);
+}
+
+.selection-button-active {
+    background-color: rgba(29, 87, 125, 255);
+    margin: 8px 16px;
+    padding: 16px;
+    color: white;
+    text-decoration: none;
+    color: rgb(247, 147, 51);
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-box {
+    background-color: rgba(15, 47, 70, 255);
+    padding: 30px 60px 30px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 8px;
+}
+
+.welcome-heading {
+    color: white;
+    font-size: 24px;
+}
+
+.welcome-text {
+    line-height: 32px;
+    color: white;
+    font-size: large;
+}
