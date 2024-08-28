@@ -19,39 +19,13 @@ Für 5Minds entstehen verschiedene Kosten durch diese AG. Daher ist der Kurs nic
 
 Der Kurs ist nach der Anmeldung verpflichtend für ein Halbjahr. Er findet jeden Mittwoch von 14-16 Uhr bei 5Minds im Büro statt.
 
-### Notes
+### Mögliche Rechner
 
-moegliche rechner:
-
-Zinsrechner
-Zinseszinsrechner
-Finanzielle Freiheit Rechner
-Kreditrate Rechner
-Kreditlaufzeit Rechner
-Inflationsrechner
-Finanzielle Ziele Rechner
-(Humankapital Rechner)
-
-hosting:
-w3schools gratis hosting von statischer page
-
-git:
-
-- jeder hat eigenen branch auf dem er arbeitet
-- genaues template mit allem was die schüler brauchen
-- genauere kontrolle über arbeitsfortschritte
-- einfachere nachbereitung von sitzungen
-- einfachere hilfestellung
-- sicherung des arbeitsstandes
-
-react:
-
-- viel zu komplex
-- allerhoechstens als zusatzaufgabe für überflieger
-
-tailwind o. css:
-
-- maybe wenn das nicht zu viel komplexität added
-- man könnte bereits stylings entwerfen mit genauen farbtoenen.
-
-https://gs-erle-test.w3spaces.com/index.html
+-   Zinsrechner
+-   Zinseszinsrechner
+-   Finanzielle Freiheit Rechner
+-   Kreditrate Rechner
+-   Kreditlaufzeit Rechner
+-   Inflationsrechner
+-   Finanzielle Ziele Rechner
+-   (Humankapital Rechner)

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="nav-bar-container">
+            <div class="nav-bar-container-middle">
+                <span class="nav-bar-logo-number">5</span>
+                <h1 class="nav-bar-logo-text">Minds</h1>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="main-content-calculator-selection">
+                <a class="selection-button" href="/">Home</a>
+                <a class="selection-button" href="/calculators/calculator01.html">Zinsrechner</a>
+                <a class="selection-button-active" href="">Zinseszinsrechner</a>
+            </div>
+            <div class="main-content-calculator-container">
+                <form id="form" class="calculator" onsubmit="zinseszins(event)">
+                    <p class="calculator-heading">Zinseszinsrechner</p>
+                    <p class="calculator-input-heading">Anfangskapital</p>
+                    <input class="calculator-input" type="number" name="anfangskapital" placeholder="10000" />
+                    <p class="calculator-input-heading">Sparrate pro Monat</p>
+                    <input class="calculator-input" type="number" name="sparrate" placeholder="100" />
+                    <p class="calculator-input-heading">Laufzeit in Jahren</p>
+                    <input class="calculator-input" type="number" name="laufzeit" placeholder="20" />
+                    <p class="calculator-input-heading">Jährlicher Zinssatz</p>
+                    <input class="calculator-input" type="number" name="zinssatz" placeholder="5" />
+                    <button class="calculator-button" type="submit">Berechnen</button>
+                </form>
+                <div class="result-container">
+                    <p class="result-heading">Berechnung</p>
+                    <div class="result">
+                        <p class="result-title">Endkapital</p>
+                        <p class="result-value" id="result">- €</p>
+                    </div>
+                    <div class="result">
+                        <p class="result-title">Einzahlungen</p>
+                        <p class="result-value" id="einzahlungen">- €</p>
+                    </div>
+                    <div class="result">
+                        <p class="result-title">Zinsen</p>
+                        <p class="result-value" id="zinsen">- €</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="history-section"></div>
+        <script src="../index.js"></script>
+    </body>
+</html>
