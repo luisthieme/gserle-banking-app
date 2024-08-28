@@ -1,3 +1,10 @@
+const Euro = new Intl.NumberFormat('en-DE', {
+    style: 'currency',
+    currency: 'EUR',
+});
+
+let isOpen = false;
+
 function zins(event) {
     event.preventDefault();
     const form = document.getElementById('form');
@@ -19,8 +26,28 @@ function zinseszins(event) {
     const resultHtml = document.getElementById('result');
     const einzahlungenHtml = document.getElementById('einzahlungen');
     const zinsenHtml = document.getElementById('zinsen');
-    resultHtml.innerText = Number(result.toFixed(2)) + ' €';
+    resultHtml.innerText = Euro.format(Number(result.toFixed(2)));
     const einzahlungen = data.sparrate * 12 * data.laufzeit;
-    einzahlungenHtml.innerText = einzahlungen + Number(data.anfangskapital) + ' €';
-    zinsenHtml.innerText = Number(result.toFixed(2)) - einzahlungen - Number(data.anfangskapital) + ' €';
+    einzahlungenHtml.innerText = Euro.format(einzahlungen + Number(data.anfangskapital));
+    zinsenHtml.innerText = Euro.format(Number(result.toFixed(2)) - einzahlungen - Number(data.anfangskapital));
+}
+
+function toggleMenu() {
+    isOpen = !isOpen;
+    console.log(isOpen);
+
+    const toggleBtn = document.getElementById('toggleButton');
+    const links = document.getElementsByClassName('selection-button-mobile');
+
+    if (isOpen) {
+        toggleBtn.innerText = 'Close Menu';
+        for (let link of links) {
+            link.classList.remove('hide-element');
+        }
+    } else {
+        toggleBtn.innerText = 'Open Menu';
+        for (let link of links) {
+            link.classList.add('hide-element');
+        }
+    }
 }
