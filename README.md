@@ -17,15 +17,16 @@ That's it!
 
 Für 5Minds entstehen verschiedene Kosten durch diese AG. Daher ist der Kurs nicht ganz kostenfrei. Insgesamt benötigen wir 30 Euro von euch. Das entspricht in etwa 2 Euro pro Sitzung.
 
-Der Kurs ist nach der Anmeldung verpflichtend für ein Halbjahr. Er findet jeden Mittwoch von 14-16 Uhr bei 5Minds im Büro statt.
+Der Kurs ist nach der Anmeldung verpflichtend für ein Halbjahr. Er findet jeden Mittwoch von 14.45-16.45 Uhr bei 5Minds im Büro statt.
 
 ### Mögliche Rechner
 
--   Zinsrechner
--   Zinseszinsrechner
--   Finanzielle Freiheit Rechner
--   Kreditrate Rechner
--   Kreditlaufzeit Rechner
--   Inflationsrechner
--   Finanzielle Ziele Rechner
--   (Humankapital Rechner)
+-   Zinsrechner (Easy)
+-   Zinseszinsrechner (Easy)
+-   Kreditrate Rechner (Medium)
+-   Kreditlaufzeit Rechner (Medium)
+-   Simpler Inflationsrechner (Medium)
+-   Finanzielle Ziele Rechner (Medium)
+-   Finanzielle Freiheit Rechner (Hard)
+-   Simpler Rentenpunkte Rechner (Hard)
+-   Humankapital Rechner (Hard)
