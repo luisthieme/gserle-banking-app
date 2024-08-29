@@ -37,13 +37,41 @@
                 <form id="form" class="calculator" onsubmit="zinseszins(event)">
                     <p class="calculator-heading">Zinseszinsrechner</p>
                     <p class="calculator-input-heading">Anfangskapital</p>
-                    <input class="calculator-input" type="number" name="anfangskapital" placeholder="10000" />
+                    <input
+                        class="calculator-input"
+                        type="number"
+                        pattern="[0-9]*"
+                        inputmode="numeric"
+                        name="anfangskapital"
+                        placeholder="10000"
+                    />
                     <p class="calculator-input-heading">Sparrate pro Monat</p>
-                    <input class="calculator-input" type="number" name="sparrate" placeholder="100" />
+                    <input
+                        class="calculator-input"
+                        type="number"
+                        pattern="[0-9]*"
+                        inputmode="numeric"
+                        name="sparrate"
+                        placeholder="100"
+                    />
                     <p class="calculator-input-heading">Laufzeit in Jahren</p>
-                    <input class="calculator-input" type="number" name="laufzeit" placeholder="20" />
+                    <input
+                        class="calculator-input"
+                        type="number"
+                        pattern="[0-9]*"
+                        inputmode="numeric"
+                        name="laufzeit"
+                        placeholder="20"
+                    />
                     <p class="calculator-input-heading">Jährlicher Zinssatz</p>
-                    <input class="calculator-input" type="number" name="zinssatz" placeholder="5" />
+                    <input
+                        class="calculator-input"
+                        type="number"
+                        pattern="[0-9]*"
+                        inputmode="numeric"
+                        name="zinssatz"
+                        placeholder="5"
+                    />
                     <button class="calculator-button" type="submit">Berechnen</button>
                 </form>
                 <div class="result-container">
