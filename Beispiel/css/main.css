@@ -1,0 +1,22 @@
+.Klasse {
+    background-color: blue;
+    color: beige;
+    margin-left: 200px;
+}
+.Überschrift {
+    background-color: rgb(6, 6, 135);
+    color: rgb(215, 39, 15);
+    margin-right: 1560px;
+}
+.Klassezwei {
+    background-color: rgb(56, 198, 37);
+    color: beige;
+    margin-left: 400px;
+    margin-right: 800px;
+}
+.Klassedrei {
+    background-color: rgb(251, 56, 234);
+    color: beige;
+    margin-left: 600px;
+    margin-right: 800px;
+}
