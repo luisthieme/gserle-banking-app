@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rechner</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <script src="JavaScript/index.js">
+
+    </script>
+<div class="titel">
+    <h2>Rechner</h2>
+</div>
+<div class="homeButtons">
+    <button>Home</button>
+    <button>Zinsrechner</button>
+    <button>Zinseszinsrechner</button>
+
+</div>
+<div class="rechnerMenue">
+    <p class="">Anfangskapital</p>
+    <input type="range" id="anfangskapital"> <br><br>
+    <p>Sparrate pro Monat</p>
+    <input type="text" id="sparrate"><br><br>
+    <p>Laufzeit in Jahren</p>
+    <input type="text" id="laufzeit"><br><br>
+    <p>Jährlicher Zinssatz</p>
+    <input type="text" id="zinssatz"><br><br><br>
+    <button onclick="berechnen()">Berechnen</button>
+    <input type="text" readonly id="ergebnis">
+</div><br><br>
+<div class="beschreibung">
+    Beschreibung
+</div>
+</body>
+</html>
