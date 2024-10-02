@@ -21,7 +21,14 @@
 </div>
 <div class="rechnerMenue">
     <p class="">Anfangskapital</p>
-    <input type="range" id="anfangskapital"> <br><br>
+    <label for="auswahl1">Was möchtest du berechnen?</label><br>
+     <select id="auswahl1">
+          <option value="anfangskapital">Anfangskapital</option>
+          <option value="zinssatz">Zinssatz</option>
+          <option value="laufzeit">Laufzeit</option>
+          <option value="endkapital">Endkapital</option>
+          <option value="sparrate">Sparrate</option>
+     </select>
     <p>Sparrate pro Monat</p>
     <input type="text" id="sparrate"><br><br>
     <p>Laufzeit in Jahren</p>
