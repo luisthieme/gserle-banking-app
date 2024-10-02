@@ -1,0 +1,15 @@
+.bg{
+    background-color: rgb(0, 0, 60);
+    
+}
+.Überschrift {
+    background-color: rgb(0, 40, 90);
+    color: rgb(215, 39, 15);  
+    font-size: 42pt;  
+}
+.Rechner{
+    background-color: rgb(0, 40, 90);
+}
+.zwischenüberschrift{
+    font-size: 22pt;
+}
