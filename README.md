@@ -27,7 +27,8 @@ Der Kurs ist nach der Anmeldung verpflichtend für ein Halbjahr. Er findet jeden
 -   Kreditlaufzeit Rechner (Medium)
 -   Simpler Inflationsrechner (Medium)/ben
 -   Finanzielle Ziele Rechner (Medium)/zoe
--   Finanzielle Freiheit Rechner (Hard)
+-   Finanzielle Freiheit Rechner (Hard)/andy
 -   Simpler Rentenpunkte Rechner (Hard)
 -   Humankapital Rechner (Hard)/leon
 -   Sparrechner/emre
+-   Inflations Rechner/illia
