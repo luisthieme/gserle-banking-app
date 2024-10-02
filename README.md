@@ -23,10 +23,11 @@ Der Kurs ist nach der Anmeldung verpflichtend für ein Halbjahr. Er findet jeden
 
 -   Zinsrechner (Easy)
 -   Zinseszinsrechner (Easy)
--   Kreditrate Rechner (Medium)
+-   Kreditrate Rechner (Medium)/tudor
 -   Kreditlaufzeit Rechner (Medium)
--   Simpler Inflationsrechner (Medium)
--   Finanzielle Ziele Rechner (Medium)
+-   Simpler Inflationsrechner (Medium)/ben
+-   Finanzielle Ziele Rechner (Medium)/zoe
 -   Finanzielle Freiheit Rechner (Hard)
 -   Simpler Rentenpunkte Rechner (Hard)
--   Humankapital Rechner (Hard)
+-   Humankapital Rechner (Hard)/leon
+-   Sparrechner/emre

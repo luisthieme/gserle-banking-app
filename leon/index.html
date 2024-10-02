@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./index.js" />
+    </head>
+    <body>
+        <div>
+            <h1>Humankapitalrechner</h1>
+            <p>Alte</p>
+            <input type="Jahre" id="alter" />
+            <p>Renteneintritt</p>
+            <input type="Jahre" id="renteein" />
+            <p>Monatliches Nettogehalt</p>
+            <input type="$" id="gehalt" />
+            <p>Gehaltssteigerung (in Prozent)</p>
+            <input type="%" id="steigerung" />
+            <p>Inflationsrate (in Prozent)</p>
+            <input type="%" id="inflation" />
+            <button onclick="human()">Berechnen</button>
+        </div>
+        <div>
+            <h2>Berechnung</h2>
+            <p>Verbleibende Arbeitsjahre</p>
+            <input type="text" id="arbeitsjahre" />
+            <p>Gesamtbelastung vor Inflation</p>
+            <input type="text" id="vinfla" />
+            <p>Dein Humankapital</p>
+            <input type="text" id="kapital" />
+        </div>
+    </body>
+</html>
