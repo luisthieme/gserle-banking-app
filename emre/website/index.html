@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <script src="JavaScript/index.js">
-
-    </script>
 <div class="titel">
     <h2>Rechner</h2>
 </div>
@@ -29,17 +26,42 @@
           <option value="endkapital">Endkapital</option>
           <option value="sparrate">Sparrate</option>
      </select>
-    <p>Sparrate pro Monat</p>
-    <input type="text" id="sparrate"><br><br>
+    <p>Anfangskapital</p>
+    <input type="text" id="anfangskapital"><br><br>
+    <label for="auswahl2">Sparintervall</label><br>
+     <select id="auswahl2">
+          <option value="monatlich">monatlich</option>
+          <option value="jährlich">Jährlich</option>
+        </select>
+        <br>
+        <label for="auswahl3">Zinsintervall</label><br>
+     <select id="auswahl3">
+          <option value="monatlich">monatlich</option>
+          <option value="jährlich">Jährlich</option>
+        </select>
+    <p>Zinssatz</p>
+    <input type="text" id="zinssatz"><br>
     <p>Laufzeit in Jahren</p>
     <input type="text" id="laufzeit"><br><br>
-    <p>Jährlicher Zinssatz</p>
-    <input type="text" id="zinssatz"><br><br><br>
+    <p> Endkapital</p>
+    <input type="text" id="endkapital"><br><br>
     <button onclick="berechnen()">Berechnen</button>
     <input type="text" readonly id="ergebnis">
+    <button onclick="test()">testen</button>
 </div><br><br>
 <div class="beschreibung">
     Beschreibung
+    <br>
+    Text<br>
+    Text<br>
+    Text<br>
+    Text<br>
+    Text<br>
+    Text<br>
+    Text<br>
 </div>
+<script src="JavaScript/index.js" defer>
+
+</script>
 </body>
 </html>
