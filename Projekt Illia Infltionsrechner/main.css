@@ -3,3 +3,45 @@
     color: rgb(0, 0, 0);
     margin-left: 200px;
 }
+
+.Berechnungsart {
+    background-attachment:violet;
+    margin-left: 800px;
+    margin-right: 1500px;
+}
+
+.Ursprungsbetrag {
+    background-color: violet;
+    margin-left: 800px;
+    margin-right: 1500px;
+}
+
+.Brechnungsgrundlage {
+    background-color: violet;
+    margin-left: 800px;
+    margin-right: 1500px; 
+}
+
+.Inflationsrate {
+    background-color: violet;
+    margin-left: 800px;
+    margin-right: 1500px;
+}
+
+.Zeitraum {
+    background-color: violet;
+    margin-left: 800px;
+    margin-right: 1500px;
+}
+
+.Informationstext {
+    background-color: violet;
+    margin-left: 800px;
+    margin-right: 1500px;
+}
+
+.Knopf {
+    background-color: violet;
+    margin-left: 800px;
+    margin-right: 1500px;
+}
