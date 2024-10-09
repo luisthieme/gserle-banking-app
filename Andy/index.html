@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css" />
+    <script src="./lp.js"></script>
     <title>Finanzielle Freiheit Rechner</title>
 
 </head>
@@ -13,17 +14,43 @@
     </h1>
     <div class="Rechner">
         <p class="zwischenüberschrift">Schritt 1: Dein monatlicher Wunschbetrag</p>
-        <p class="normalT">Wie viel Geld würdest du im Monat in der Rente brauchen/wollen?</p>
-        <input id="MonatlicherWunschbetrag">
+        <p class="normalT">Dein monatlicher netto Wunschbetrag</p>
+        <input id="MonatlicherWunschbetrag" value="1200">
         <p class="zwischenüberschrift">Schritt 2: Deine Angaben</p>
-        <p class="normalT">Erwartete Rendite pro Jahr?</p>
-        <input id="xRendite">
-        <p class="normalT">Inflation berücksichtigen?</p>
-        <!--<button type="button" class="Kreuzb"></button>-->
-        <p class="normalT">Steuersatz der Abgeltungsteuer?</p>
-        <input id="Abgeltungsteuer">
-        <p class="normalT">Dein heutiges Alter?</p>
-        <input id="JAlter">
+        <p class="normalT">Erwartete Rendite pro Jahr</p>
+        <input id="xRendite" value="5,00">
+        <br>
+        <br>
+        
+        <p class="normalT" style="display: inline;">Inflation berücksichtigen?</p>
+        <button type="button" class="Kreuzb" onclick="InflationAn();"></button>
+        <p style="display: none;" class="normalT" id="Inflation">Inflationsrate</p>
+        <input id="Inflationsrate" style="display: none;" value="1,84">
+
+        <p class="normalT">Steuersatz der Abgeltungsteuer</p>
+        <input value="26,83" id="Abgeltungsteuer">
+        <p class="normalT">Dein heutiges Alter</p>
+        <input value="25" id="JetztAlter">
+        <p class="normalT">Dein Wunschrenteneintrittsalter</p>
+        <input value="45" id="WunschAlter">
+        <br>
+        <br>
+
+        <p id="test" class="normalT" style="display: inline;">Kapitalverzehr?</p>
+        <button type="button" class="Kreuzb" onclick="KapitalverzehrAn();"></button>
+        <p class="normalT" id="Kapitalverzehr" style="display: none;">Deine geschätzte Lebenserwartung</p>
+        <input type="number" value="95" id="Lebenserwartung" style="display: none;">
+
+        <p class="normalT">Jahre bis zur Finanziellen Freiheit</p>
+        <p class="normalT" id="JahrebisFF"></p>
+        <p class="normalT">Bereits vorhandenes Kapital</p> 
+        <input value="10.000,00" id="Kapital">
+        <br>
+        <br>
+        <button type="button" id="berechnen" onclick="berechnen();">Berechnen</button>
+        
+        
+
     </div>
 </body>
 </html>
