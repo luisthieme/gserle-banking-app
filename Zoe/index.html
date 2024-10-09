@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzielle Ziele Rechner</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./index.js"></script>
+</head>
+<body class="body">
+    <form id="myForm">
+        <div class="ulA" id="menu">
+            <p class="pZwei"><b style="font-size: 37px;">Erklärungen</b>
+            <br> <br> <b>Kosten deines Zieles</b> <br> Welcher Zielbetrag soll <br> am Ende der <br> Ansparphase auf <br> deinem Konto sein?
+            <br> <br> <b>Ansparphase</b> <br> Über welchen <br> Zeitraum möchtest du <br> dein Geld ansparen?
+            <br> <br> <b style="font-size: 22px;">Zinssatz der Geldanlage</b> <br> Zu welchem Zinssatz <br> hast du dein Geld <br> angelegt? 
+            <br> <br> <b>Steuersatz der <br> Abgeltungssteuer</b> <br> Was ist der tatsächliche <br> Gewinn, den du <br> bekommst?
+            <br> <br> <b>Kirchensteuer</b> <br> Bist du <br> Kirchensteuerpflichtig? <br> Wie viel Kirchensteuer <br> zahlst du?
+            <br> <br> <b>Monatliche Sparrate</b> <br> So viel Geld musst <br> du monatlich einzahlen, <br> um dein Sparziel zu <br> erreichen.</p>
+        </div>
+    <center> 
+        <div class="box">    
+            <h1>Finanzielle Ziele Rechner</h1>
+            <div class="boxInBox">
+            <h3>Kosten deines Ziels</h3>
+            <input placeholder="Zielbetrag in €" name="ziel"/>
+            </div>
+            <div class="boxInBox">
+            <h3>Ansparpase</h3>
+            <input placeholder="Zeit des Ansparens in Jahren" name="phase" />
+            </div>
+            <div class="boxInBox">
+            <h3>Zinssatz der Geldanlage</h3>
+            <input placeholder="Zinssatz der Geldanlage in %" name="zinssatz" />
+            </div>
+            <div class="boxInBox">
+            <h3>Steuersatz der Abgeltungssteuer</h3>
+            <input placeholder="Steuersatz der Abgeltungssteuer in %" name="abgeltung" />
+            </div>
+            <div class="boxInBox">
+            <h3>Kirchensteuer</h3>
+            <select id="mySelect">
+                <option value="optionEins" name="optionEins">Keine Kirchensteuerpflicht</option>
+                <option value="optionZwei" name="optionZwei">Kirchensteuerpflichtig (8%)</option> 
+                <option value="optionDrei" name="optionDrei">Kirchensteuerpflichtig (9%)</option>
+            </select>
+            </div>
+            <br>
+            <button type="button" class="buttonEins" onclick="berechnenEins()"><b>Berechnen</b></button>
+            <br>
+            <br>
+        </div>
+        <br>
+        <div class="box">
+            <b><p>Monatliche Sparrate</p></b>
+            <p id="pEins">Ergebnis</p>
+        </div>
+    </center>
+    </form>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzielle Ziele Rechner</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./index.js"></script>
+</head>
+<body class="body">
+    <form id="myForm">
+        <div class="ulA" id="menu">
+            <p class="pZwei"><b style="font-size: 37px;">Erklärungen</b>
+            <br> <br> <b>Kosten deines Zieles</b> <br> Welcher Zielbetrag soll <br> am Ende der <br> Ansparphase auf <br> deinem Konto sein?
+            <br> <br> <b>Ansparphase</b> <br> Über welchen <br> Zeitraum möchtest du <br> dein Geld ansparen?
+            <br> <br> <b style="font-size: 22px;">Zinssatz der Geldanlage</b> <br> Zu welchem Zinssatz <br> hast du dein Geld <br> angelegt? 
+            <br> <br> <b>Steuersatz der <br> Abgeltungssteuer</b> <br> Was ist der tatsächliche <br> Gewinn, den du <br> bekommst?
+            <br> <br> <b>Kirchensteuer</b> <br> Bist du <br> Kirchensteuerpflichtig? <br> Wie viel Kirchensteuer <br> zahlst du?
+            <br> <br> <b>Monatliche Sparrate</b> <br> So viel Geld musst <br> du monatlich einzahlen, <br> um dein Sparziel zu <br> erreichen.</p>
+        </div>
+    <center> 
+        <div class="box">    
+            <h1>Finanzielle Ziele Rechner</h1>
+            <div class="boxInBox">
+            <h3>Kosten deines Ziels</h3>
+            <input placeholder="Zielbetrag in €" name="ziel"/>
+            </div>
+            <div class="boxInBox">
+            <h3>Ansparpase</h3>
+            <input placeholder="Zeit des Ansparens in Jahren" name="phase" />
+            </div>
+            <div class="boxInBox">
+            <h3>Zinssatz der Geldanlage</h3>
+            <input placeholder="Zinssatz der Geldanlage in %" name="zinssatz" />
+            </div>
+            <div class="boxInBox">
+            <h3>Steuersatz der Abgeltungssteuer</h3>
+            <input placeholder="Steuersatz der Abgeltungssteuer in %" name="abgeltung" />
+            </div>
+            <div class="boxInBox">
+            <h3>Kirchensteuer</h3>
+            <select id="mySelect">
+                <option value="optionEins" name="optionEins">Keine Kirchensteuerpflicht</option>
+                <option value="optionZwei" name="optionZwei">Kirchensteuerpflichtig (8%)</option> 
+                <option value="optionDrei" name="optionDrei">Kirchensteuerpflichtig (9%)</option>
+            </select>
+            </div>
+            <br>
+            <button type="button" class="buttonEins" onclick="berechnenEins()"><b>Berechnen</b></button>
+            <br>
+            <br>
+        </div>
+        <br>
+        <div class="box">
+            <b><p>Monatliche Sparrate</p></b>
+            <p id="pEins">Ergebnis</p>
+        </div>
+    </center>
+    </form>
+</body>
+</html>

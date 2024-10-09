@@ -1,0 +1,105 @@
+body {
+    max-width: 1200px;
+    min-width: 1200px;
+    position: absolute;
+    white-space: nowrap;   
+    background-color: rgb(195, 195, 195);
+    font-size: 25px;
+}
+
+.box {
+    border-bottom: 2px solid rgb(200, 200, 200);
+    border-left: 2px solid (rgb(220, 220, 220), rgb(200, 200, 200));
+    border-top: 2px solid rgb(220, 220, 220);
+    border-right: 2px solid (rgb(200, 200, 200), rgb(220, 220, 220));
+    background-color: rgb(210, 210, 210);    
+    border-radius: 50px;
+    margin-left:300px;
+}
+
+.boxInBox {
+    margin: 3px;
+    margin-left: 6px;
+    margin-right: 6px;
+    padding-bottom: 10px;
+    border-radius: 12.5px;
+    border-bottom: 2px solid rgb(215, 215, 215);
+    border-left: 2px solid (rgb(235, 235, 235), rgb(215, 215, 215));
+    border-top: 2px solid rgb(235, 235, 235);
+    border-right: 2px solid (rgb(215, 215, 215), rgb(235, 235, 235));
+    background-color: rgb(225, 225, 225);
+ }
+
+input {
+    width: 500px;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border-radius: 12.5px;
+    font-size: 20px;
+}
+
+input:focus {
+    background-color: rgb(193, 220, 252);
+}
+
+input:hover {
+    background-color: rgb(172, 204, 253);
+}
+
+select {
+    width: 540px;
+    border-color: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border-radius: 12.5px;
+    font-size: 20px;
+}
+
+select:active {
+    background-color: rgba(242, 242, 242, 0.973);
+}
+
+.buttonEins {
+    width: 500px;
+    background-color: orange;
+    padding: 20px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 25px;
+}
+
+.buttonEins:active {
+    background-color: rgb(207, 120, 2);    
+}
+ 
+.ulA {
+    list-style-type: none;
+    display: block;
+    overflow-y: scroll;
+    scrollbar-width: 5px;
+    width: 260px;
+    height: 92%;
+    background-image: linear-gradient(rgb(225, 225, 225), rgb(210, 210, 210), rgb(195, 195, 195));
+    padding-top: 10px;
+    position: fixed;
+}
+
+.pZwei {
+    margin-left: 7.5px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
