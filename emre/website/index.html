@@ -1,64 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rechner</title>
+    <title>Finanzrechner</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-<div class="titel">
-    <h2>Rechner</h2>
-</div>
-<div class="homeButtons">
-    <button>Home</button>
-    <button>Zinsrechner</button>
-    <button>Zinseszinsrechner</button>
 
-</div>
-<div class="rechnerMenue">
-    <p class="">Anfangskapital</p>
-    <label for="auswahl1">Was möchtest du berechnen?</label><br>
-     <select id="auswahl1">
+<body>
+    <div class="obereHälfte">
+        <div class="titel">
+            <h1>Sparrechner</h1>
+        </div>
+        <div class="homeButtons">
+            <div class="buttonHome">
+                <button>Home</button>
+            </div>
+            <div class="buttonZinsrechner">
+                <button>Zinsrechner</button>
+            </div>
+            <div class="buttonSparrechner">
+                <button>Sparrechner</button>
+            </div>
+            </div>
+    </div>
+    <div class="sparrechner">
+    <div class="rechnerMenue">
+        <div class="auswahlRechner">
+    <label for="auswahlRechner">Was möchtest du berechnen?</label>
+     <select id="auswahlRechner">
           <option value="anfangskapital">Anfangskapital</option>
           <option value="zinssatz">Zinssatz</option>
           <option value="laufzeit">Laufzeit</option>
           <option value="endkapital">Endkapital</option>
           <option value="sparrate">Sparrate</option>
-     </select>
-    <p>Anfangskapital</p>
-    <input type="text" id="anfangskapital"><br><br>
-    <label for="auswahl2">Sparintervall</label><br>
-     <select id="auswahl2">
+    </select>
+    </div>
+    <div class="anfangskapital" id="anfangskapitalClass">
+    <div class="titelAnfangskapital">
+    <label>Anfangskapital</label>
+    </div>
+    <input type="text" id="anfangskapitalInput">
+    </div>
+    <div class="sparintervall">
+    <label for="auswahlSparintervall">Sparintervall</label>
+     <select id="auswahlSparintervall">
           <option value="monatlich">monatlich</option>
           <option value="jährlich">Jährlich</option>
         </select>
-        <br>
-        <label for="auswahl3">Zinsintervall</label><br>
-     <select id="auswahl3">
+    </div>
+    <div class="sparrate" id="sparrateClass">
+    <div class="titelSparrate">
+    <label>Sparrate</label>
+</div>
+    <input type="text" id="sparrate">
+    </div>
+        <label for="auswahlZinsintervall">Zinsintervall</label>
+     <select id="auswahlZinsintervall">
           <option value="monatlich">monatlich</option>
           <option value="jährlich">Jährlich</option>
         </select>
-    <p>Zinssatz</p>
-    <input type="text" id="zinssatz"><br>
-    <p>Laufzeit in Jahren</p>
-    <input type="text" id="laufzeit"><br><br>
-    <p> Endkapital</p>
-    <input type="text" id="endkapital"><br><br>
+        <div class="zinssatz" id="zinssatzClass">
+    <label>Zinssatz</label>
+    <input type="text" id="zinssatz">
+</div>
+<div class="laufzeit" id="laufzeitClass">
+    <label>Laufzeit in Jahren</label>
+    <input type="text" id="laufzeit">
+</div>
+<div class="endkapital" id="endkapitalClass">
+    <label> Endkapital</label>
+    <input type="text" id="endkapital">
+</div>
     <button onclick="berechnen()">Berechnen</button>
     <input type="text" readonly id="ergebnis">
     <button onclick="test()">testen</button>
-</div><br><br>
+</div>
 <div class="beschreibung">
-    Beschreibung
-    <br>
-    Text<br>
-    Text<br>
-    Text<br>
-    Text<br>
-    Text<br>
-    Text<br>
-    Text<br>
+    <h2>Beschreibung </h2>
+    <p class="beschreibung1">
+        Fieberst du auf den langersehnten Urlaub hin oder möchtest dir den Traum von der finanziellen Freiheit 
+        erfüllen? Dann ist unser Sparrechner genau das richtige Tool für dich. Stelle flexibel ein, welche Sparrate 
+        du monatlich erübrigen kannst, welche Laufzeit du im Auge hast oder wie viel Kapital du am Ende erhalten 
+        willst – der Sparrechner verrät dir, zu welchen Konditionen du dein Geld anlegen kannst.
+    </p>
+    <p class="beschreibung2">
+        Im Grunde ist der Sparrechner einfach: Trage ein, wie viel Geld du anlegen kannst, welche Sparrate monatlich 
+        übrig ist und wie lange die Geldanlage laufen soll – herauskommt das Kapital, das du am Ende deiner Laufzeit 
+        in den Händen hältst. Aber auch darüber hinaus kann dir der Sparrechner einiges rund um dein Anlegevorhaben 
+        verraten. Folgende Dinge kannst du mit dem Sparrechner errechnen:
+    </p>
+    <ul class="liste1">
+        <li>das Anfangskapital, also das Geld, das du zu Beginn deines Sparvorhabens anlegen kannst</li>
+        <li>den Zinssatz, also den Nominal- oder Sollzins, zu dem das angelegte Vermögen verzinst werden soll</li>
+        <li>die Laufzeit – wie lange willst du dein Geld ansparen?</li>
+        <li>das Endkapital, also die Summe an Erspartem, die am Ende des Sparvorhabens auf deinem Konto landet</li>
+        <li>die Sparrate oder auch die Summe, die du monatlich oder jährlich beiseite legen kannst oder solltest</li>
+    </ul>
+</div>
 </div>
 <script src="JavaScript/index.js" defer>
 
