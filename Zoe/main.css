@@ -2,7 +2,7 @@ body {
     max-width: 1200px;
     min-width: 1200px;
     position: absolute;
-    white-space: nowrap;   
+    white-space: normal;   
     background-color: #1a334a;
     font-size: 25px;
 }
