@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben's Inflationsrechner</title>
+    <link rel="stylesheet" href="Inflationsrechner.css" />
+    <script src="Inflationsrechner.js"></script>
+</head>
+<body class="main_background">
+
+    <div class="heading">
+        <h1>Einfach und Schnell: Inflationsrate berechnen</h1>
+    </div>
+
+
+    <div class="side_bar_container">
+        <div class="side_bar">
+            <h4 style="text-decoration: underline; line-height: 100%;">Auch berechnen:</h4>
+            <a class="link" href="Inflationsrechner.html">Ursprungsbetrag</a>
+            <br>
+            <a class="link" href="Inflationsrechner.css">Inflationsrate</a>
+            <br>
+            <a class="link" href="Inflationsrechner.js">Zeitraum</a>
+        </div>
+
+        <div class="lower_side_bar">
+            <h4 style="text-decoration: underline;">Code und Quellen</h4>
+            <a class="link" href="Inflationsrechner.html">HTML Code</a><br>
+            <a class="link" href="Inflationsrechner.css">CSS Code</a><br>
+            <a class="link" href="Inflationsrechner.js">Javascript Code</a><br>
+            <a class="link" href="Quellen.txt">Textquellen</a>
+        </div>
+    </div>
+
+        <div class="input" style="color: rgb(0, 0, 0);">
+            <div class="Input_Field">
+            <h3>Berechnung der zukünftigen Kaufkraft</h3>
+            <p>Ursprungsbetrag</p> 
+            <input type="number" id="UB" min="0">  in Euro
+            <p>Inflationsrate</p>
+            <input type="number" id="IR">  in %
+            <p>Zeitraum</p>
+            <input type="number" id="ZR" min="0">  in Jahren
+            <br>
+            <br>
+            <button class="Berechnen_Button" onclick="Zukunft_Kaufkraft(); document.getElementById('Output_Button').style.display='block'">Berechnen</button>
+            </div>
+            <div style="display: none;" id="Output_Button" class="Berechnung">
+                <h4>Dein Ergebnis:</h4>
+                <p>Zukünftige Kaufkraft: <span id="Output"></span>€</p>
+            </div>
+        </div>
+
+
+    <div class="explanation">
+        <h2 style="text-decoration: underline;">Was ist eigentlich Inflation?</h2>
+        <p>
+        Inflation ist, wenn die Preise für Dinge wie Essen und Kleidung steigen. 
+        Wenn die Inflation hoch ist, kann man mit dem gleichen Geld weniger kaufen.<br>
+        Es gibt einige Gründe, warum Inflation passiert:<br>
+        </p>
+        <div style="line-height: 300%;">
+            <b>Nachfrage: Wenn viele Leute etwas kaufen wollen und es nicht genug davon gibt, steigen die Preise.</b><br>
+            <b>Kosten: Wenn es teurer wird, Dinge herzustellen (z.B. Rohstoffe oder Löhne), erhöhen die Firmen oft die Preise.</b><br>
+            <b>Geldmenge: Wenn eine Zentralbank mehr Geld druckt, haben die Menschen mehr Geld zum Ausgeben, was die Preise steigen lässt.</b><br>
+        </div>
+        <p style="margin-top: 25px;">
+        Eine kleine Inflation ist normal und gut für die Wirtschaft. Zu hohe Inflation macht es jedoch schwierig, 
+        Geld zu sparen oder zu planen, da man weniger kaufen kann.
+        </p>
+        
+    </div>
+
+    
+</body>
+</html>

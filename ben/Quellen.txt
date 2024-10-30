@@ -1,0 +1,6 @@
+Infotext geschrieben mithilfe von:
+- Finanzfluss.de
+- Chatgpt.org
+- hypochart.de
+
+Vielen Dank an W3Schools für die Hilfe beim Code :)

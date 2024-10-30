@@ -1,0 +1,9 @@
+Konzept Inflationsrechner
+
+Was kann man berechnen?
+- Zukünftige Kaufkraft (also, dass was mein Geld
+in der Zukunft noch wert ist)
+- Ursprungsbetrag (errechnet mit der zukünftigen 
+Kaufkraft rückwärts)
+- Inflationrate (ist klar)
+- Zeitraum 

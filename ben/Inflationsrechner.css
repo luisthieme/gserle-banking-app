@@ -1,0 +1,89 @@
+.main_background {
+    background-color: rgb(255, 255, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.heading {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+
+.input {
+    font-size: larger;
+    float: none;
+    gap: 200px;
+    display: flex;
+    background-color: rgb(179, 176, 191);
+    margin-left: 213px;
+    border:2px solid rgb(16, 5, 110);
+    border-radius: 12px;
+    padding: 3px;
+}
+
+
+.lower_side_bar {
+    float: left;
+    margin-left: 0px;
+    background-color: rgb(179, 176, 191);
+    width: 200px;
+    border: 2px solid rgb(16, 5, 110);
+    border-radius: 12px;
+    padding: 5px;
+
+}
+
+.side_bar_container {
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.side_bar {
+    float: left;
+    margin-left: 0px;
+    width: 200px; 
+    background-color: rgb(179, 176, 191);
+    border:2px solid rgb(16, 5, 110);
+    border-radius: 12px;
+    padding:5px
+}
+
+.explanation {
+    background-color: rgb(179, 176, 191);
+    margin-left: 213px;
+    border:2px solid rgb(16, 5, 110);
+    border-radius: 12px;
+    padding: 8px;
+    line-height: 150%;
+}
+
+.link-seiten {
+    background-color: rgb(179, 176, 191);
+}
+
+
+.link {
+    text-decoration: none;
+    color: black;
+    line-height: 300%;
+
+}
+
+.link:hover {
+    color: brown;
+}
+
+
+.Berechnen_Button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+    margin: 6px 4px;
+    cursor: pointer;
+    line-height: 150%;
+}
