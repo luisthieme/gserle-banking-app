@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./main.css" href="Rechner.js">
+
 </head>
-<body>
-   <div style="background-color: rgb(107, 0, 230);">
-     <p style="background-color: blueviolet; text-align: center; ">
-      <h1>Inflationsrechner: Kaufkraft & Co. einfach berechenen</h1>
-     </p>
-        
-   
-    <p class="Informatinstext">
-      <h2 style="background-color: blueviolet; text-align: inherit;">
+<body style="background-color: rgb(129, 66, 255);">
+   <div>
+
+    <h1 class="Überschrift">Inflationsrechner: Kaufkraft & Co. einfach berechenen</h1>
+
+      <h2 class="Informatinstext">
         Von der Inflation hat jeder schon einmal gehört, und in gewisser Weise 
         bekommt sie auch jeder am eigenen Leib zu spüren. Preisniveaus verändern 
         sich mit der Zeit. In der Art, wie sich unsere Wirtschaft entwickelt, werden 
@@ -25,44 +24,43 @@
         Tagesgeldkonto "aufgefressen" wird. Mit unserem Inflationsrechner kannst du genau bestimmen, wie sich die Veränderung des Preisniveaus auf die Kaufkraft 
         deines Geldes auswirkt.
       </h2>
-   </p>
+   <div class="Inflation">
+     <h2  >
+        Inflationsrechner
+      </h2>
 
-
-      <div class="Inflation">
-        <p style="background-color: blueviolet; margin-left: 800px;"> <h2>Inflationsrechner</h2></p>
-        <input type="number">
-      </div>
+     
       
       <div class="Berechnungsart">
-        <p style="background-color: blueviolet; margin-left: 800px;"> <h2>Was möchtest du berechnen?</h2></p>
+        <h2>Was möchtest du berechnen?</h2>
         <input type="text">
       </div>
        
       <div class="Ursprungsbetrag">
-        <p style="background-color: blueviolet; margin-left: 800px;"><h2>Ursprungsbetrag</h2></p> 
-        <input  type="number">
+        <h2>Ursprungsbetrag</h2>
+        <input  type="number" slot="a">
       </div>
       
       <div class="Berechnungsgrundlage">
-        <p style="background-color: blueviolet; margin-left: 800px;"><h2>Berechnungsgrundlage</h2></p>
+        <h2>Berechnungsgrundlage</h2>
         <input type="number">
       </div>
     
      <div class="Inflationsrate">  
-       <p style="background-color: blueviolet; margin-left: 800px;"><h2>Inflationsrate</h2></p>
+       <h2>Inflationsrate</h2>
        <input type="number">
      </div> 
        
      <div class="Zeitraum">
-       <p style="background-color: blueviolet; margin-left: 800px;"><h2 >Zeitraum</h2></p>
+       <h2 >Zeitraum</h2>
        <input type="number">
      </div>
  
     <div class="Knopf">
-      <button style="background-color: gray; size: 800px;"></button>
+      <button style="background-color: gray; " onclick="document.write(Endbetrag)"> </button>
    </div>
     
-
+    </div>
 
   </div>
 

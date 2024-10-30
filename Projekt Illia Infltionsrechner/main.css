@@ -1,3 +1,14 @@
+.Überschrift{
+    background-color: rgb(6, 6, 135);
+    color: rgb(146, 0, 0);
+    text-align: center;
+}
+
+.Informationstext {
+    background-color: rgb(107, 0, 189);
+    text-align: center;
+}
+
 .Inflation {
     background-color: rgb(90, 73, 240);
     color: rgb(0, 0, 0);
@@ -5,43 +16,31 @@
 }
 
 .Berechnungsart {
-    background-attachment:violet;
-    margin-left: 800px;
-    margin-right: 1500px;
+    background-attachment:rgb(107, 0, 189);
+    text-align: center;
 }
 
 .Ursprungsbetrag {
-    background-color: violet;
-    margin-left: 800px;
-    margin-right: 1500px;
+    background-color: rgb(107, 0, 189);
+    text-align: center;
 }
 
 .Brechnungsgrundlage {
-    background-color: violet;
-    margin-left: 800px;
-    margin-right: 1500px; 
+    background-color: rgb(107, 0, 189);
+    text-align: center;
 }
 
 .Inflationsrate {
-    background-color: violet;
-    margin-left: 800px;
-    margin-right: 1500px;
+    background-color: rgb(107, 0, 189);
+    text-align: center;
 }
 
 .Zeitraum {
-    background-color: violet;
-    margin-left: 800px;
-    margin-right: 1500px;
-}
-
-.Informationstext {
-    background-color: violet;
-    margin-left: 800px;
-    margin-right: 1500px;
+    background-color: rgb(107, 0, 189);
+    text-align: center;
 }
 
 .Knopf {
-    background-color: violet;
-    margin-left: 800px;
-    margin-right: 1500px;
+    background-color: rgb(107, 0, 189);
+    text-align: center;
 }
