@@ -9,7 +9,7 @@ function berechnenEins() {
         var monatlichPhase = phase * 12
         var sparrate = ziel * monatlicherZinssatz / (Math.pow((1 + monatlicherZinssatz), monatlichPhase) - 1)
         sparrate = sparrate.toFixed(2);
-        document.getElementById("pEins").innerHTML = sparrate;
+        document.getElementById("pEins").innerHTML = sparrate + " €";
     }
     else {
         berechnenZwei ();
@@ -29,7 +29,7 @@ function berechnenZwei() {
         var monatlichPhase = phase * 12
         var sparrate = ziel * monatlicherZinssatz / (Math.pow((1 + monatlicherZinssatz), monatlichPhase) - 1)
         sparrate = sparrate.toFixed(2);
-        document.getElementById("pEins").innerHTML = sparrate;
+        document.getElementById("pEins").innerHTML = sparrate + " €";
     }
     else {
         berechnenDrei ();
@@ -49,6 +49,6 @@ function berechnenDrei() {
         var monatlichPhase = phase * 12
         var sparrate = ziel * monatlicherZinssatz / (Math.pow((1 + monatlicherZinssatz), monatlichPhase) - 1)
         sparrate = sparrate.toFixed(2);
-        document.getElementById("pEins").innerHTML = sparrate;
+        document.getElementById("pEins").innerHTML = sparrate + " €";
     }
 }

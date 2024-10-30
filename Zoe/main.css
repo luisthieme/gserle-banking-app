@@ -3,32 +3,24 @@ body {
     min-width: 1200px;
     position: absolute;
     white-space: nowrap;   
-    background-color: rgb(2, 1, 19);
+    background-color: #1a334a;
     font-size: 25px;
 }
 
-.box {
-    border-bottom: 2px solid rgb(200, 200, 200);
-    border-left: 2px solid (rgb(220, 220, 220), rgb(200, 200, 200));
-    border-top: 2px solid rgb(220, 220, 220);
-    border-right: 2px solid (rgb(200, 200, 200), rgb(220, 220, 220));
-    background-color: rgb(210, 210, 210);    
+.boxEins {
+    background-color: #1e536e;    
     border-radius: 50px;
     margin-left:300px;
+    color: #5aa5cd;
+
 }
 
-.boxInBox {
-    margin: 3px;
-    margin-left: 6px;
-    margin-right: 6px;
-    padding-bottom: 10px;
-    border-radius: 12.5px;
-    border-bottom: 2px solid rgb(215, 215, 215);
-    border-left: 2px solid (rgb(235, 235, 235), rgb(215, 215, 215));
-    border-top: 2px solid rgb(235, 235, 235);
-    border-right: 2px solid (rgb(215, 215, 215), rgb(235, 235, 235));
-    background-color: rgb(225, 225, 225);
- }
+.boxZwei {
+    background-color: #1e536e;    
+    border-radius: 25px;
+    margin-left:300px;
+    color: #5aa5cd;
+}
 
 input {
     width: 500px;
@@ -39,11 +31,11 @@ input {
 }
 
 input:focus {
-    background-color: rgb(193, 220, 252);
+    background-color: rgb(231, 231, 231);
 }
 
 input:hover {
-    background-color: rgb(172, 204, 253);
+    background-color: rgb(207, 207, 207);
 }
 
 select {
@@ -60,16 +52,17 @@ select:active {
 
 .buttonEins {
     width: 500px;
-    background-color: orange;
+    background-color: #361147;
     padding: 20px;
     border: none;
     border-radius: 25px;
-    color: white;
+    color: #ab73b9;
     font-size: 25px;
 }
 
 .buttonEins:active {
-    background-color: rgb(207, 120, 2);    
+    background-color: #739ab9; 
+    color: #113047;   
 }
  
 .ulA {
@@ -79,9 +72,11 @@ select:active {
     scrollbar-width: 5px;
     width: 260px;
     height: 92%;
-    background-image: linear-gradient(rgb(225, 225, 225), rgb(210, 210, 210), rgb(195, 195, 195));
-    padding-top: 10px;
+    color: #1a334a;
     position: fixed;
+    padding-bottom: 40px;
+    background-image: linear-gradient(#1e536e, #896fa1);
+    font-size: 17px;
 }
 
 .pZwei {
@@ -101,5 +96,5 @@ select:active {
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #74757a; 
   }
