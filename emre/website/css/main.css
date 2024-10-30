@@ -1,131 +1,136 @@
 body {
-    background-color: #f0f2f5;
-    color: #333;
+  background-color: #f0f2f5;
+  color: #333;
 }
 
 .titel {
-    background-color: #0ec47e;
-    margin: 20px auto;
-    text-align: center;
-    width: 40%;
-    padding: 20px;
-    color: white;
-    font-size: 24px;
-    border-radius: 8px;
+  background-color: #0ec47e;
+  margin: 20px auto;
+  text-align: center;
+  width: 40%;
+  padding: 20px;
+  color: white;
+  font-size: 24px;
+  border-radius: 8px;
 }
 
 .homeButtons {
-    background-color: #444;
-    color: #fff;
-    margin: 10px auto;
-    display: flex;
-    width: 40%;
-    justify-content: space-around;
-    padding: 10px;
-    border-radius: 8px;
+  background-color: #444;
+  color: #fff;
+  margin: 10px auto;
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .homeButtons button {
-    background-color: #0ec47e;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    font-size: 16px;
+  background-color: #0ec47e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
 }
 
 .homeButtons button:hover {
-    background-color: #0da766;
+  background-color: #0da766;
 }
 
 .rechnerMenue {
-    margin: 20px auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    width: 50%;
-    color: #333;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  color: #333;
 }
 
-.rechnerMenue select{
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 16px;
-    margin-bottom: 20px;
+.rechnerMenue select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  flex-direction: column;
 }
 .rechnerMenue input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 16px;
-    margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
-
+.sparrate {
+  display: flex;
+  flex-direction: column;
+}
 .rechnerMenue select:focus,
 .rechnerMenue input[type="text"]:focus {
-    outline: none;
-    border-color: #0ec47e;
+  outline: none;
+  border-color: #0ec47e;
 }
 
 .rechnerMenue button {
-    background-color: #0ec47e;
-    color: white;
-    padding: 12px;
-    width: 100%;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    margin-top: 10px;
+  background-color: #0ec47e;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 .rechnerMenue button:hover {
-    background-color: #0da766;
+  background-color: #0da766;
 }
 
 .rechnerMenue button + button {
-    background-color: #555;
-    margin-top: 10px;
+  background-color: #555;
+  margin-top: 10px;
 }
 
 .rechnerMenue button + button:hover {
-    background-color: #444;
+  background-color: #444;
 }
 
 #ergebnis {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    font-size: 18px;
-    background-color: #f5f5f5;
-    color: #333;
-    border: 1px solid #ddd;
-    text-align: center;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+  background-color: #f5f5f5;
+  color: #333;
+  border: 1px solid #ddd;
+  text-align: center;
 }
 
 .beschreibung {
-    background-color: #333;
-    color: white;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    width: 40%;
+  background-color: #333;
+  color: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 40%;
 }
 
 .beschreibung h2 {
-    color: #0ec47e;
-    font-size: 22px;
-    margin-bottom: 10px;
+  color: #0ec47e;
+  font-size: 22px;
+  margin-bottom: 10px;
 }
 
 .beschreibung p,
 .beschreibung ul {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .beschreibung ul {
-    margin-left: 20px;
+  margin-left: 20px;
 }
