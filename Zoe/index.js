@@ -6,8 +6,8 @@ function berechnenEins() {
         var zinssatz = parseFloat(document.getElementById("myForm").elements["zinssatz"].value);
         var effektiverZinssatz =  zinssatz * (1 - (abgeltung / 100))
         var monatlicherZinssatz = (effektiverZinssatz / 12) / 100
-        var monatlichPhase = phase * 12
-        var sparrate = ziel * monatlicherZinssatz / (Math.pow((1 + monatlicherZinssatz), monatlichPhase) - 1)
+        var monatlichePhase = phase * 12
+        var sparrate = ziel * monatlicherZinssatz / (Math.pow((1 + monatlicherZinssatz), monatlichePhase) - 1)
         sparrate = sparrate.toFixed(2);
         document.getElementById("pEins").innerHTML = sparrate + " €";
     }
@@ -26,8 +26,8 @@ function berechnenZwei() {
         var abUnKi = abgeltung + abVoKi
         var effektiverZinssatz =  zinssatz * (1 - abUnKi / 100)
         var monatlicherZinssatz = (effektiverZinssatz / 12) / 100
-        var monatlichPhase = phase * 12
-        var sparrate = ziel * monatlicherZinssatz / (Math.pow((1 + monatlicherZinssatz), monatlichPhase) - 1)
+        var monatlichePhase = phase * 12
+        var sparrate = ziel * monatlicherZinssatz / (Math.pow((1 + monatlicherZinssatz), monatlichePhase) - 1)
         sparrate = sparrate.toFixed(2);
         document.getElementById("pEins").innerHTML = sparrate + " €";
     }
@@ -46,8 +46,8 @@ function berechnenDrei() {
         var abUnKi = abgeltung + abVoKi
         var effektiverZinssatz =  zinssatz * (1 - abUnKi / 100)
         var monatlicherZinssatz = (effektiverZinssatz / 12) / 100
-        var monatlichPhase = phase * 12
-        var sparrate = ziel * monatlicherZinssatz / (Math.pow((1 + monatlicherZinssatz), monatlichPhase) - 1)
+        var monatlichePhase = phase * 12
+        var sparrate = ziel * monatlicherZinssatz / (Math.pow((1 + monatlicherZinssatz), monatlichePhase) - 1)
         sparrate = sparrate.toFixed(2);
         document.getElementById("pEins").innerHTML = sparrate + " €";
     }
