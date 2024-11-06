@@ -2,67 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./main.css" href="Rechner.js">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Inflationsrechner</title>
+    <link rel="stylesheet" href="main.css" href="calculator.js">
 </head>
-<body style="background-color: rgb(129, 66, 255);">
+<body class="Hintergrund" >
    <div>
-
-    <h1 class="Überschrift">Inflationsrechner: Kaufkraft & Co. einfach berechenen</h1>
-
-      <h2 class="Informatinstext">
-        Von der Inflation hat jeder schon einmal gehört, und in gewisser Weise 
-        bekommt sie auch jeder am eigenen Leib zu spüren. Preisniveaus verändern 
-        sich mit der Zeit. In der Art, wie sich unsere Wirtschaft entwickelt, werden 
-        Güter im Durchschnitt teurer - das bedeutet, dass du 
-        für den Betrag, den du vor 10 Jahren für einen Wocheneinkauf ausgegeben hast, heute weniger 
-        Waren bekommst. Inflation muss nichts Schlechtes sein. Ein moderater Anstieg der Preise ist 
-        sogar üblich und für die Wirtschaft vorteilhaft. Dennoch spricht man davon, 
-        der Inflation "entgegenarbeiten" zu müssen oder dass Erspartes auf dem 
-        Tagesgeldkonto "aufgefressen" wird. Mit unserem Inflationsrechner kannst du genau bestimmen, wie sich die Veränderung des Preisniveaus auf die Kaufkraft 
-        deines Geldes auswirkt.
-      </h2>
-   <div class="Inflation">
-     <h2  >
-        Inflationsrechner
-      </h2>
-
-     
-      
-      <div class="Berechnungsart">
-        <h2>Was möchtest du berechnen?</h2>
-        <input type="text">
-      </div>
-       
-      <div class="Ursprungsbetrag">
-        <h2>Ursprungsbetrag</h2>
-        <input  type="number" slot="a">
-      </div>
-      
-      <div class="Berechnungsgrundlage">
-        <h2>Berechnungsgrundlage</h2>
-        <input type="number">
-      </div>
-    
-     <div class="Inflationsrate">  
-       <h2>Inflationsrate</h2>
-       <input type="number">
-     </div> 
-       
-     <div class="Zeitraum">
-       <h2 >Zeitraum</h2>
-       <input type="number">
-     </div>
- 
-    <div class="Knopf">
-      <button style="background-color: gray; " onclick="document.write(Endbetrag)"> </button>
-   </div>
-    
+   
+    <div class="Überschrift" style="font-size: 400%">
+      <h1>
+        Inflationsrechner: Kaufkraft & Co. einfach berechnen
+      </h1>
     </div>
 
-  </div>
+    <div class="Informationstext" style="font-size:370%">
+        Inflation muss nichts Schlechtes sein. 
+        Ein moderater Anstieg der Preise ist sogar üblich und für die Wirtschaft vorteilhaft. 
+        Dennoch spricht man davon, der Inflation "entgegenarbeiten" zu müssen oder 
+        dass Erspartes auf dem Tagesgeldkonto "aufgefressen" wird. 
+        Mit unserem Inflationsrechner kannst du genau bestimmen, 
+        wie sich die Veränderung des Preisniveaus auf die Kaufkraft deines Geldes auswirkt.
+    </div>
+
+    <div class="Rechner">
+      
+      <div class="Berechnungsart" style="font-size:450%">
+          Was möchtest du berechnen?
+            <input type="text" style="font-size:80%" >    
+      </div>
+
+      <div class="Ursprungsbetrag" style="font-size:450%">
+        Ursprungsbetrag
+        <input type="text" placeholder="100$" style="font-size:80%" >    
+      </div>
+
+      <div class="Inflationsrate" style="font-size:450%">
+        Inflationsrate
+        <input type="text" placeholder="5%" style="font-size:80%" >     
+      </div>
+
+      <div class="Zeitraum" style="font-size:450%">
+        Zeitraum in Jahren
+        <input type="text" placeholder="10" style="font-size:80%" >    
+      </div>
+      
+    </div>
+
+      <div class="Knopf" >
+        Berechnen
+      </div>
+
+      <div class="Löschen">
+        Löschen
+      </div>
+
+    <div class="Ausgabefeld">
+       Ausgabefeld
+       <output>
+         1234
+       </output>
+    </div>
+
+    
+     
+
+   </div> 
+
 
 </body>
 </html>

@@ -1,46 +1,93 @@
-.Überschrift{
-    background-color: rgb(6, 6, 135);
-    color: rgb(146, 0, 0);
-    text-align: center;
+.Hintergrund{
+    background-color: rgb(53, 2, 119);
 }
 
-.Informationstext {
-    background-color: rgb(107, 0, 189);
+.Überschrift {
+    background-color: blue;
     text-align: center;
+    width: 1850px;
+    height: 350px;
+    border-radius: 20px;
 }
 
-.Inflation {
-    background-color: rgb(90, 73, 240);
-    color: rgb(0, 0, 0);
-    margin-left: 200px;
+.Informationstext{
+    background-color: blue;
+    text-align: center;
+    margin: 100px;
+    width: 1650px;
+    height: 500px;
+    border-radius: 20px;
 }
 
-.Berechnungsart {
-    background-attachment:rgb(107, 0, 189);
-    text-align: center;
+.Rechner{
+    margin: 100px;
+    width: 1645px;
+    height: 550px;
+    border-radius: 20px;
+    background-color: rgb(4, 4, 82);
 }
 
-.Ursprungsbetrag {
-    background-color: rgb(107, 0, 189);
-    text-align: center;
+.Berechnungsart{
+    background-color: blue;
+    position: relative;
 }
 
-.Brechnungsgrundlage {
-    background-color: rgb(107, 0, 189);
-    text-align: center;
+.Ursprungsbetrag{
+    background-color: blue;
 }
 
-.Inflationsrate {
-    background-color: rgb(107, 0, 189);
-    text-align: center;
+.Inflationsrate{
+    background-color: blue;
 }
 
-.Zeitraum {
-    background-color: rgb(107, 0, 189);
-    text-align: center;
+.Zeitraum{
+    background-color: blue;
 }
 
-.Knopf {
-    background-color: rgb(107, 0, 189);
+.Knopf{
+    margin-left: 300px;
+    width: 1250px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: grey;
     text-align: center;
+    line-height: 300px;
+    font-size: 800%;
+    cursor: pointer;
+    user-select: none;
 }
+
+.Knopf:hover{
+    filter: brightness(150%);
+}
+
+.Ausgabefeld{
+    margin-left: 85px;
+    width: 1650px;
+    height: 350px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: beige; 
+    text-align: center;
+    line-height: 300px;
+    font-size: 800%;
+    user-select: none;
+}
+
+.Löschen{
+    margin-left: 300px;
+    width: 1250px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: rgb(252, 147, 147);
+    text-align: center;
+    line-height: 300px;
+    font-size: 800%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Löschen:hover {
+    filter: brightness(150%);
+}
+
