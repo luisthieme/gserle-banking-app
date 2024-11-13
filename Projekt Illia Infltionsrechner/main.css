@@ -1,93 +1,137 @@
 .Hintergrund{
-    background-color: rgb(53, 2, 119);
+    background-color: rgb(66, 0, 188);
 }
 
 .Überschrift {
-    background-color: blue;
+    margin-left: 150px;
+    background-color: rgb(63, 63, 219);
     text-align: center;
-    width: 1850px;
-    height: 350px;
+    width: 1550px;
+    height: 220px;
     border-radius: 20px;
 }
 
 .Informationstext{
-    background-color: blue;
+    margin-top: 100px;
+    margin-left: 500px;
+    background-color: rgb(62, 62, 245);
     text-align: center;
-    margin: 100px;
-    width: 1650px;
-    height: 500px;
+    width: 1282px;
+    height: 420px;
     border-radius: 20px;
 }
 
 .Rechner{
-    margin: 100px;
-    width: 1645px;
-    height: 550px;
+    margin-top: 20px;
+    margin-left: 500px;
+    width: 1282px;
+    height: 968px;
     border-radius: 20px;
     background-color: rgb(4, 4, 82);
 }
 
-.Berechnungsart{
-    background-color: blue;
-    position: relative;
-}
-
 .Ursprungsbetrag{
-    background-color: blue;
+    width: 1282px;
+    height: 160px;
+    border-radius: 20px;
+    background-color: rgb(3, 3, 158);
 }
 
 .Inflationsrate{
-    background-color: blue;
+    margin-top: 10px;
+    width: 1282px;
+    height: 160px;
+    border-radius: 20px;
+    background-color: rgb(3, 3, 158);
 }
 
 .Zeitraum{
-    background-color: blue;
-}
-
-.Knopf{
-    margin-left: 300px;
-    width: 1250px;
-    height: 350px;
+    margin-top: 10px;
+    width: 1282px;
+    height: 160px;
     border-radius: 20px;
-    background-color: grey;
-    text-align: center;
-    line-height: 300px;
-    font-size: 800%;
-    cursor: pointer;
-    user-select: none;
+    background-color:  rgb(3, 3, 158);
 }
 
-.Knopf:hover{
-    filter: brightness(150%);
-}
-
-.Ausgabefeld{
-    margin-left: 85px;
-    width: 1650px;
-    height: 350px;
+.Knöpfe{
+    margin-top: 10px;
+    width: 1282px;
+    height: 160px;
     border-radius: 20px;
-    text-align: center;
-    background-color: beige; 
-    text-align: center;
-    line-height: 300px;
-    font-size: 800%;
-    user-select: none;
 }
 
 .Löschen{
-    margin-left: 300px;
-    width: 1250px;
-    height: 350px;
+    margin-top: 100px;
+    margin-left: 10px;
+    width: 600px;
+    height: 150px;
     border-radius: 20px;
-    background-color: rgb(252, 147, 147);
+    background-color: gray;
     text-align: center;
-    line-height: 300px;
-    font-size: 800%;
+    line-height: 160px;
+    font-size: 100%;
     cursor: pointer;
     user-select: none;
 }
 
-.Löschen:hover {
-    filter: brightness(150%);
+.Löschen:hover{
+    background-color: red;
 }
 
+.Berechnen{
+    margin-left: 10px;
+    width: 600px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: blue;
+    text-align: center;
+    line-height: 160px;
+    font-size: 100%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Berechnen:hover{
+    background-color: green;
+}
+
+.Ausgabefeld{
+    margin-top: 20px;
+    margin-left: 500px;
+    width: 1282px;
+    height: 710px;
+    border-radius: 20px;
+    background-color: rgb(4, 4, 82);
+}
+
+.Zukünftige-Kaufkraft{
+    margin-top: 20px;
+    width: 1282px;
+    height: 160px;
+    border-radius: 20px;
+    background-color:  rgb(3, 3, 158);
+}
+
+.Kaufkraftverlust{
+    margin-top: 10px;
+    width: 1282px;
+    height: 160px;
+    border-radius: 20px;
+    background-color:  rgb(3, 3, 158);
+}
+
+.Zukünftiger-Preis{
+    margin-top: 10px;
+    width: 1282px;
+    height: 160px;
+    border-radius: 20px;
+    background-color:  rgb(3, 3, 158);
+}
+
+.Preissteigerung{
+    margin-top: 10px;
+    width: 1282px;
+    height: 160px;
+    border-radius: 20px;
+    background-color:  rgb(3, 3, 158);
+}

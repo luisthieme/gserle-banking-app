@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8, initial-scale=1.0, user-scalable=yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projekt Inflationsrechner</title>
-    <link rel="stylesheet" href="main.css" href="calculator.js">
+    <title>Tauron: Projekt Inflationsrechner</title>
+    <link rel="stylesheet" href="main.css">
+
+    <script>
+      window.addEventListener("load", function()){
+        let Berechnen = document.getElementById("berechnen");
+        Berechnen.addEventListener("click", function()){
+          alert("angeklickt")
+        }
+      }
+
+
+    </script>
+
+
+
+
 </head>
-<body class="Hintergrund" >
-   <div>
-   
-    <div class="Überschrift" style="font-size: 400%">
-      <h1>
+<body class="Hintergrund">
+
+    <div class="Überschrift" style="font-size: 600%;">
         Inflationsrechner: Kaufkraft & Co. einfach berechnen
-      </h1>
     </div>
 
-    <div class="Informationstext" style="font-size:370%">
+    <div class="Informationstext" style="font-size:310%">
         Inflation muss nichts Schlechtes sein. 
         Ein moderater Anstieg der Preise ist sogar üblich und für die Wirtschaft vorteilhaft. 
         Dennoch spricht man davon, der Inflation "entgegenarbeiten" zu müssen oder 
@@ -23,52 +35,70 @@
         Mit unserem Inflationsrechner kannst du genau bestimmen, 
         wie sich die Veränderung des Preisniveaus auf die Kaufkraft deines Geldes auswirkt.
     </div>
-
-    <div class="Rechner">
-      
-      <div class="Berechnungsart" style="font-size:450%">
-          Was möchtest du berechnen?
-            <input type="text" style="font-size:80%" >    
-      </div>
-
-      <div class="Ursprungsbetrag" style="font-size:450%">
-        Ursprungsbetrag
-        <input type="text" placeholder="100$" style="font-size:80%" >    
-      </div>
-
-      <div class="Inflationsrate" style="font-size:450%">
-        Inflationsrate
-        <input type="text" placeholder="5%" style="font-size:80%" >     
-      </div>
-
-      <div class="Zeitraum" style="font-size:450%">
-        Zeitraum in Jahren
-        <input type="text" placeholder="10" style="font-size:80%" >    
-      </div>
-      
-    </div>
-
-      <div class="Knopf" >
-        Berechnen
-      </div>
-
-      <div class="Löschen">
-        Löschen
-      </div>
-
-    <div class="Ausgabefeld">
-       Ausgabefeld
-       <output>
-         1234
-       </output>
-    </div>
-
     
-     
+    <div class="Rechner">
 
-   </div> 
+        <div class="Ursprungsbetrag" style="font-size:400%">
+             Ursprungsbetrag
+           <input type="number" placeholder="100$" style="font-size:80%" id="Ursprung">    
+        </div>
+
+        <div class="Inflationsrate" style="font-size:400%">
+           Inflationsrate in Prozent
+           <input type="number" placeholder="2%" style="font-size:80%" id="Prozent">     
+        </div>
+
+        <div class="Zeitraum" style="font-size:400%">
+           Zeitraum in Jahren
+           <input type="number" placeholder="10 Jahren" style="font-size:80%" id="Zeit">    
+        </div>
+
+        <div class="Knöpfe">
+
+           <div class="Berechnen" style="font-size:400%" id="berechnen">
+               Berechnen
+           </div>
+
+           <div class="Löschen" style="font-size:400%" id="löschen">
+              Löschen
+           </div>
+
+        </div>
+
+    </div>
+
+    <div class="Ausgabefeld" >
+
+        <div class="Zukünftige-Kaufkraft" style="font-size:400%">
+           Zukünftige-Kaufkraft 
+           <output  id="Zukünftige-Kaufkraft" style="background-color: white;">
+           </output>
+        </div>
+        
+        <div class="Kaufkraftverlust" style="font-size: 400%;">
+           Kaufkraftverlust 
+           <output  id="Kaufkraftverlust" style="background-color: white;">  
+           </output>
+        </div>
+
+        <div class="Zukünftiger-Preis" style="font-size: 400%;">
+           Zukünftiger-Preis
+           <output  id="Zukünftiger-Preis" style="background-color: white;"> 
+           </output>
+        </div>
+
+        <div class="Preissteigerung" style="font-size: 400%;">
+           Preissteigerung
+           <output  id="Preissteigerung" style="background-color: white;">   
+           </output>
+        </div>
+
+    </div>
+
+
+
+
 
 
 </body>
 </html>
-
