@@ -1,31 +1,105 @@
-.bg{
+.bg {
     background-color: rgb(0, 0, 60);
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .Überschrift {
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     background-color: rgb(0, 40, 90);
-    color: rgb(215, 39, 15);  
-    font-size: 42pt;  
-
+    color: rgb(215, 39, 15); 
+    font-size: 42pt; 
+    text-align: center;
 }
 
-.Rechner{
-    
+.Rechner {
     border-radius: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding: 5px;
+    margin: 0 auto;
+    width: 70%;
+    padding: 20px;
     background-color: rgb(0, 40, 90);
 }
-.zwischenüberschrift{
+
+.zwischenüberschrift {
+    width: 80%;
     margin-left: 5%;
+    padding-right: 20px;
     font-size: 22pt;
     color: rgb(201, 148, 0);
+    border-bottom: 2px solid rgb(201, 148, 0);
+    padding-bottom: 10px;
 }
-.normalT{
+
+.normalT {
     margin-left: 5%;
+    font-size: 18pt;
+    color: rgb(201, 148, 0);
+    margin-bottom: 15px;
+}
+
+.input {
+    width: 80%;
+    margin-left: 5%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
     font-size: larger;
-    color:rgb(201, 148, 0)
+}
+
+.button {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(215, 39, 15);
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: rgb(255, 50, 30);
+}
+
+input[type="checkbox"] {
+    align-self: right;
+    margin-top: 16px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 2px solid rgb(201, 148, 0);
+    border-radius: 5px;
+    background-color: rgb(0, 40, 90);
+    appearance: none;
+
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(201, 148, 0);
+    border: 2px solid rgb(201, 148, 0);
+}
+
+input[type="checkbox"]:checked::before {
+    content: '✓';
+    display: block;
+    text-align: center;
+    color: rgb(0, 40, 190);
+    font-size: 16px;
+    line-height: 17px;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.Zeichen span {
+    color: rgb(89, 89, 89);
+    position: absolute;
+    right: 25%;
+    padding: 4px;
+    font-size: 18pt;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css" />
-    
+
     <title>Finanzielle Freiheit Rechner</title>
 
 </head>
@@ -15,18 +15,25 @@
     <div class="Rechner">
         <h2 class="zwischenüberschrift">Schritt 1: Dein monatlicher Wunschbetrag</h2>
         <p class="normalT">Dein monatlicher netto Wunschbetrag</p>
-        <input class="input" type="text" id="MonatlicherWunschbetragDisplay" value="1200">
+        <div class="Zeichen">
+            <input class="input" type="text" id="MonatlicherWunschbetrag" value="1200">
+            <span>€</span>
+        </div>
         
+
         <h2 class="zwischenüberschrift">Schritt 2: Deine Angaben</h2>
         <p class="normalT">Erwartete Rendite pro Jahr</p>
-        <input class="input" id="xRendite" value="5,00">
-        <br>
-        <br>
-        
-        <p class="normalT" style="display: inline;">Inflation berücksichtigen?</p>
-        <input id="Inflationa" type="checkbox">
+        <div class="Zeichen">
+            <input class="input" id="xRendite" value="5,00">
+            <span>%</span>
+        </div>
+
+        <div class="checkbox-container">
+            <p class="normalT" id="InflationText">Inflation berücksichtigen?</p>
+            <input id="Inflationa" type="checkbox">
+        </div>
         <p style="display: none;" class="normalT" id="Inflation">Inflationsrate</p>
-        <input id="Inflationsrate" style="display: none;" value="1,84">
+        <input class="input" id="Inflationsrate" style="display: none;" value="1,84">
 
         <p class="normalT">Steuersatz der Abgeltungsteuer</p>
         <input class="input" value="26,83" id="Abgeltungssteuer">
@@ -36,15 +43,16 @@
         <input class="input" value="45" id="WunschAlter">
         <br>
         <br>
-
-        <p id="test" class="normalT" style="display: inline;">Kapitalverzehr?</p>
-        <input id="Kapitalverzehrer" type="checkbox">
+        <div class="checkbox-container">
+            <p id="test" class="normalT" style="display: inline;">Kapitalverzehr?</p>
+            <input id="Kapitalverzehrer" type="checkbox">
+        </div>
         <p class="normalT" id="Kapitalverzehr" style="display: none;">Deine geschätzte Lebenserwartung</p>
         <input class="input" type="number" value="95" id="Lebenserwartung" style="display: none;">
 
         <p class="normalT">Jahre bis zur Finanziellen Freiheit</p>
         <p class="normalT" id="JahrebisFF">20</p>
-        <p class="normalT">Bereits vorhandenes Kapital</p> 
+        <p class="normalT">Bereits vorhandenes Kapital</p>
         <input class="input" value="10000,00" id="Kapital">
         <br>
         <br>
@@ -52,7 +60,7 @@
         <p class="zwischenüberschrift" id="Berechnung" style="display: none;">Berechnung</p>
         <p class="normalT" id="Ergebnisse"></p>
         <p class="normalT" id="Erklärung"></p>
-        
+
 
     </div>
     <script src="./lp.js"></script>

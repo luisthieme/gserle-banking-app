@@ -13,30 +13,32 @@ function InflationBestimmen() {
     if(document.getElementById("Inflationa").checked)    {
         document.getElementById("Inflation").style.display = "block";
         document.getElementById("Inflationsrate").style.display = "block";
-        InflationBerücksichtigen="an"
+
     }
     else {
         document.getElementById("Inflation").style.display = "none";
         document.getElementById("Inflationsrate").style.display = "none";
-        InflationBerücksichtigen="aus"
+
     }
 }
 function KapitalVerzeherBestimmen() {
-    document.getElementById("Kapitalverzehr").style.display = "block"
-    document.getElementById("Lebenserwartung").style.display = "block"
+    if(document.getElementById("Kapitalverzehrer").checked)    {
+        document.getElementById("Kapitalverzehr").style.display = "block";
+        document.getElementById("Lebenserwartung").style.display = "block";
+
+    }
+    else {
+        document.getElementById("Kapitalverzehr").style.display = "none";
+        document.getElementById("Lebenserwartung").style.display = "none";
+
+    }
 }
 function berechnen(){
-    if(InflationBerücksichtigen=="an"){
-        inflation=parseInt(document.getElementById("Inflationsrate").value)
-    }
-    else{
-        Inflation=0
-    }
-    Startkapital=parseInt(document.getElementById("Kapital").value);
+    Startkapital=parseInt(document.getElementById("Kapital").value);   
     MonatlicherWunschbetrag=parseInt(document.getElementById("MonatlicherWunschbetrag").value);
     Laufzeit=parseInt(document.getElementById("JahrebisFF").innerHTML)*12;
-    JahrRendite=parseFloat(document.getElementById("xRendite").value)/100;
-    Abgeltungssteuer=parseFloat(document.getElementById("Abgeltungssteuer").value)/100;
+    JahrRendite=parseFloat(document.getElementById("xRendite").value)/100;   
+    Abgeltungssteuer=parseFloat(document.getElementById("Abgeltungssteuer").value)/100;   
     NettoRendite=JahrRendite*(1-Abgeltungssteuer)
     Kapitalbedarf=parseInt((1/NettoRendite)*MonatlicherWunschbetrag*12);
     MonatlicheSparrate = parseInt((Kapitalbedarf-Startkapital*Math.pow(1+NettoRendite/12,Laufzeit)) / ((Math.pow(1 + NettoRendite / 12, Laufzeit) - 1) / (NettoRendite / 12)));
