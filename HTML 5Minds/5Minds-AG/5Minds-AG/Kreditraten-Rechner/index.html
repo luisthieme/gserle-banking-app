@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css"></link>
+    <script src="index.js"></script>
+</head>
+<!--So schreibt man Kommentare!-->
+<body>
+    <div class="all">
+
+        <div class="heading">
+            <h1>Kreditraten-Rechner</h1>
+        </div>
+
+        <div class="name-und-input">
+            <h3>Finanzierungsbetrag (in Euro)</h3>
+            <input id="betrag"/>
+
+            <h3>Finanzierungsdauer (in Monate)</h3>
+            <input id="monate"/>
+                        
+            <h3>Nominaler Jahreszinssatz (in %)</h3>
+            <input id="zins"/>
+
+        </div>
+
+        <div class="CooleAbgrenzung">
+            <h2>______________________________________________________________________________________________________________________________</h2>
+        </div>
+        
+        <div class="button1">
+            <button onclick="berechnen()">
+                Berechnen
+            </button>
+        </div>
+
+        <div class="ausgabe">
+            <h3 id="endRate">Monatliche Rate:</h3>
+            <h3 id="endAufwand">Gesamter Aufwand:</h3>
+            <h3 id="endZins">Zinsbedingter Aufwand:</h3>
+        </div>
+    </div>
+</body>
+</html>

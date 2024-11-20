@@ -1,0 +1,26 @@
+.all {
+    background-color: rgb(61, 73, 139);
+    text-align: center;
+}
+.heading {
+    color: rgb(210, 174, 235);
+    text-shadow: 2px 2px 10px rgb(129, 108, 144);
+    font-family: Georgia, Times, serif
+}
+.name-und-input {
+    color: rgb(210, 174, 235);
+    text-shadow: 2px 2px 10px rgb(129, 108, 144);
+}
+button:hover {
+    color: rgb(210, 174, 235);
+}
+.ausgabe {
+    color: rgb(194, 29, 29);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid rgb(143, 32, 75);
+    width: 50%;
+    outline-color: rgb(205, 46, 107);
+    outline-style: outset;
+    padding: 5px;
+    margin: auto;
+}
