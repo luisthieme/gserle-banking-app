@@ -7,19 +7,31 @@ const zukünftige = document.getElementById('Zukünftige'),
       zukünftigerPreis = document.getElementById('Zukünftiger-Preis'),
       preissteigerung =document.getElementById('Preissteigerung');
 
-document.querySelector('.ls').onclick = clearAll;
+document.querySelector('.Knöpfe').onclick = (Event)=> {
+   if(!Event.target.classList.Contains('Br')){
+      if(isNaN(ursprung) || isNaN(prozent) || isNaN(zeit)){
+         alert("Bitte alle Felder korrekt ausfühlen.");
+         return;
+      } else {
 
+         let zukünftige = ursprung / Math.pow(1+prozent, zeit);
+         let kaufkraftverlust = ursprung - zukünftige;
+         let zukünftigerPreis = ursprung * Math.pow(1+prozent, zeit);
+         let preissteigerung = (zukünftigerPreis/ ursprung-1)*100;
 
- document.querySelector('.Knöpfe').onclick = (Event) => {
-   if(!Event.target.classList.Contains('Br')) return;
-   if(Event.target.classList.Contains('Ls')) return;
- }
- 
-window.onload = function(){
-   
-   console.log(zukünftige, prozent,  zukünftige, sign);
+         document.getElementById("zukünftige").innerText = zukünftige.toFixed(2);
+         document.getElementById("kaufkraftverlust").innerText = kaufkraftverlust.toFixed(2);
+         document.getElementById("zukünftigerPreis").innerText = zzukünftigerPreis.toFixed(2);
+         document.getElementById("preissteigerung").innerText = preissteigerung.toFixed(2);
+      }
+   }
+   if(Event.target.classList.Contains('Ls')){
+      document.getElementById("zukünftige").innerText = "";
+      document.getElementById("kaufkraftverlust").innerText = "";
+      document.getElementById("zukünftigerPreis").innerText = "";
+      document.getElementById("preissteigerung").innerText = "";
 
-
+   }
 }
 
 
@@ -38,8 +50,7 @@ window.onload = function(){
 
 
 
-
-    function berechnen(){
+  /*  function berechnen(){
         let ursprung = parseFloat(document.getElementById("Ursprung").value);
         let prozent = parseFloat(document.getElementById("Prozent").value) / 100;
         let zeit = parseInt(document.getElementById("Zeit").value);
@@ -72,4 +83,4 @@ window.onload = function(){
         document.getElementById("Preissteigerung").value = "";
     }
 
-
+*/ 

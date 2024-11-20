@@ -1,25 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8, initial-scale=1.0, user-scalable=yes">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tauron: Projekt Inflationsrechner</title>
-    <link rel="stylesheet" href="main.css">
-
-    <script>
-      window.addEventListener("load", function()){
-        let Berechnen = document.getElementById("berechnen");
-        Berechnen.addEventListener("click", function()){
-          alert("angeklickt")
-        }
-      }
-
-
-    </script>
-
-
-
-
+    <title>Projekt Inflationsrechner</title>
+    <link rel="stylesheet" href="main.css", href="Rechner.js">
 </head>
 <body class="Hintergrund">
 
@@ -35,11 +20,41 @@
         Mit unserem Inflationsrechner kannst du genau bestimmen, 
         wie sich die Veränderung des Preisniveaus auf die Kaufkraft deines Geldes auswirkt.
     </div>
+
+  <!--  <div class="Auswahlfeld">
+       <p class="Zinsrechner" onclick="document.location = 'default.asp'" style="font-size: 300%;">
+         Zinsrechner
+       </p>
+
+       <p class="Kreditrate Rechner" onclick="document.location = 'default.asp'" style="font-size: 300%;">
+         Kreditrate Rechner
+       </p>
+
+       <p class="Kreditlaufzeit Rechner" onclick="document.location = 'default.asp'" style="font-size: 300%;">
+         Kreditlaufzeit Rechner
+       </p>
+
+       <p class="Finanzielle Ziele Rechner" onclick="document.location = 'default.asp'" style="font-size: 300%;">
+         Finanzielle Ziele Rechner
+       </p>
+
+       <p class="Finanzielle Freiheit Rechner" onclick="document.location = 'default.asp'" style="font-size: 300%;">
+         Finanzielle Freiheit Rechner
+       </p>
+
+       <p class="Rentenpunkte Rechner" onclick="document.location = 'default.asp'" style="font-size: 300%;">
+         Rentenpunkte Rechner
+       </p>
+
+       <p class="Humankapital Rechner" onclick="document.location = 'default.asp'" style="font-size: 300%;">
+         Humankapital Rechner
+       </p>
+    </div> -->
     
     <div class="Rechner">
 
         <div class="Ursprungsbetrag" style="font-size:400%">
-             Ursprungsbetrag
+           Ursprungsbetrag
            <input type="number" placeholder="100$" style="font-size:80%" id="Ursprung">    
         </div>
 
@@ -55,13 +70,13 @@
 
         <div class="Knöpfe">
 
-           <div class="Berechnen" style="font-size:400%" id="berechnen">
+            <button class="Berechnen" style="font-size:400%" id="Br" onclick="Berechnen();">
                Berechnen
-           </div>
+            </button>
 
-           <div class="Löschen" style="font-size:400%" id="löschen">
-              Löschen
-           </div>
+            <button class="Löschen" style="font-size:400%" id="Ls" onclick="Löschen();">
+               Löschen
+            </button>
 
         </div>
 
@@ -75,19 +90,19 @@
            </output>
         </div>
         
-        <div class="Kaufkraftverlust" style="font-size: 400%;">
+        <div class="Kaufkraftverlust" style="font-size:400%">
            Kaufkraftverlust 
            <output  id="Kaufkraftverlust" style="background-color: white;">  
            </output>
         </div>
 
-        <div class="Zukünftiger-Preis" style="font-size: 400%;">
+        <div class="Zukünftiger-Preis" style="font-size:400%">
            Zukünftiger-Preis
            <output  id="Zukünftiger-Preis" style="background-color: white;"> 
            </output>
         </div>
 
-        <div class="Preissteigerung" style="font-size: 400%;">
+        <div class="Preissteigerung" style="font-size:400%">
            Preissteigerung
            <output  id="Preissteigerung" style="background-color: white;">   
            </output>
@@ -96,7 +111,25 @@
     </div>
 
 
+<script>
+   function Berechnen(){
+      if(isNaN(ursprung) || isNaN(prozent) || isNaN(zeit)){
+         alert("Bitte alle Felder korrekt ausfühlen.");
+         return;
+      } else {
 
+         let zukünftige = ursprung / Math.pow(1+prozent, zeit);
+         let kaufkraftverlust = ursprung - zukünftige;
+         let zukünftigerPreis = ursprung * Math.pow(1+prozent, zeit);
+         let preissteigerung = (zukünftigerPreis/ ursprung-1)*100;
+
+         document.getElementById("zukünftige").innerText = zukünftige.toFixed(2);
+         document.getElementById("kaufkraftverlust").innerText = kaufkraftverlust.toFixed(2);
+         document.getElementById("zukünftigerPreis").innerText = zzukünftigerPreis.toFixed(2);
+         document.getElementById("preissteigerung").innerText = preissteigerung.toFixed(2);
+      }
+   }
+</script>
 
 
 

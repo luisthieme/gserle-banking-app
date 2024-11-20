@@ -1,31 +1,42 @@
 .Hintergrund{
-    background-color: rgb(66, 0, 188);
+    background-color: rgb(62, 3, 170);
 }
 
 .Überschrift {
     margin-left: 150px;
-    background-color: rgb(63, 63, 219);
+    background-color: rgb(3, 3, 158);
     text-align: center;
     width: 1550px;
     height: 220px;
     border-radius: 20px;
+    color: rgb(150, 223, 243);
 }
 
 .Informationstext{
     margin-top: 100px;
     margin-left: 500px;
-    background-color: rgb(62, 62, 245);
+    background-color: rgb(3, 3, 158);
     text-align: center;
     width: 1282px;
     height: 420px;
     border-radius: 20px;
+    color: rgb(150, 223, 243);
+}
+
+.Auswahlfeld{
+    margin-top: 20px;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: rgb(4, 4, 82);
+    color: rgb(150, 223, 243);
 }
 
 .Rechner{
     margin-top: 20px;
     margin-left: 500px;
     width: 1282px;
-    height: 968px;
+    height: 800px;
     border-radius: 20px;
     background-color: rgb(4, 4, 82);
 }
@@ -35,6 +46,7 @@
     height: 160px;
     border-radius: 20px;
     background-color: rgb(3, 3, 158);
+    color: rgb(150, 223, 243);
 }
 
 .Inflationsrate{
@@ -43,6 +55,7 @@
     height: 160px;
     border-radius: 20px;
     background-color: rgb(3, 3, 158);
+    color: rgb(150, 223, 243);
 }
 
 .Zeitraum{
@@ -51,6 +64,7 @@
     height: 160px;
     border-radius: 20px;
     background-color:  rgb(3, 3, 158);
+    color: rgb(150, 223, 243);
 }
 
 .Knöpfe{
@@ -61,7 +75,7 @@
 }
 
 .Löschen{
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 10px;
     width: 600px;
     height: 150px;
@@ -110,28 +124,32 @@
     height: 160px;
     border-radius: 20px;
     background-color:  rgb(3, 3, 158);
+    color: rgb(150, 223, 243);
 }
 
 .Kaufkraftverlust{
-    margin-top: 10px;
+    margin-top: 20px;
     width: 1282px;
     height: 160px;
     border-radius: 20px;
     background-color:  rgb(3, 3, 158);
+    color: rgb(150, 223, 243);
 }
 
 .Zukünftiger-Preis{
-    margin-top: 10px;
+    margin-top: 20px;
     width: 1282px;
     height: 160px;
     border-radius: 20px;
     background-color:  rgb(3, 3, 158);
+    color: rgb(150, 223, 243);
 }
 
 .Preissteigerung{
-    margin-top: 10px;
+    margin-top: 20px;
     width: 1282px;
     height: 160px;
     border-radius: 20px;
     background-color:  rgb(3, 3, 158);
+    color: rgb(150, 223, 243);
 }
