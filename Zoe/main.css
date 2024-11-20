@@ -3,21 +3,29 @@ body {
     min-width: 1300px;
     position: absolute;
     white-space: normal;   
-    background-color: #003261;
+    background-color: #011c35;
     font-size: 25px;
 }
 
 .boxEins {
-    background-color: #006391;    
+    background-color: #10395f;   
     margin-left:300px;
-    color: #8ed2ff;
-
+    border-radius: 20px;
 }
 
 .boxZwei {
-    background-color: #006391;    
+    background-color: #10395f;
+    margin-top: 10px;
     margin-left:300px;
-    color: #8ed2ff;
+    border-radius: 20px;
+}
+
+.hEins {
+    color: #02223f;
+}
+
+.hDrei {
+    color: #346eb1;    
 }
 
 input {
@@ -33,7 +41,11 @@ input:focus {
 }
 
 input:hover {
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(231, 241, 255);
+}
+
+::-webkit-input-placeholder {
+    color: #506388;
 }
 
 select {
@@ -42,6 +54,7 @@ select {
     padding: 20px;
     border-radius: 12.5px;
     font-size: 20px;
+    color: #506388;
 }
 
 select:active {
@@ -59,7 +72,7 @@ select:active {
 }
 
 .buttonEins:active {
-    background-color: #a1d5ff; 
+    background-color: #b3d4ff; 
     color: #00345c;   
 }
  
@@ -70,15 +83,23 @@ select:active {
     scrollbar-width: 5px;
     width: 260px;
     height: 92%;
-    color: #003261;
+    color: #b3d4ff;
     position: fixed;
     padding-bottom: 40px;
-    background-image: linear-gradient(#006391, #003261);
+    background-image: linear-gradient(#235f97, #011c35);
     font-size: 17px;
 }
 
 .pZwei {
     margin-left: 7.5px;
+}
+
+.bNull {
+  color: #ba7df3;
+}
+
+.bEins {
+  color: #dab3ff;
 }
 
 ::-webkit-scrollbar {
@@ -90,9 +111,9 @@ select:active {
   }
    
   ::-webkit-scrollbar-thumb {
-    background: #b6b6b6; 
+    background: #949494; 
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #a0a0a0; 
+    background: #757575; 
   }
