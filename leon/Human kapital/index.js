@@ -14,7 +14,7 @@ z = 0
 
 
 let sum = parseFloat(ein.value) - parseFloat(alter.value);
-document.getElementById("arbeitsjahre").innerText = sum;
+document.getElementById("arbeitsjahre").innerText = sum + " Jahre";
 
 //let f = gehalt *Math.pow( steigerung ,(sum * 12));
 
@@ -33,7 +33,8 @@ while (y<(sum * 12))   {
       x += 1
       y += 1
    }
-   document.getElementById("vinfla").innerText = gehaltt.toFixed(2).toLocaleString("de-DE");
+  // gehaltt = gehaltt.toFixed(2).replace('.', ',');
+   document.getElementById("vinfla").innerText = gehaltt.toLocaleString('de-DE') + " $";
 
 
 
@@ -48,8 +49,11 @@ while (y<(sum * 12))   {
        z += 1
     }
     //console.log('TEST');
+    //gehalttt = Numbergehalttt.toFixed(2).replace('.', ',');
 
-    document.getElementById("kapital").innerText = gehalttt.toFixed(2).toLocaleString("de-DE");
+    //gehalttt = gehalttt.toLocaleString('de-DE')
+
+    document.getElementById("kapital").innerText = gehalttt.toLocaleString('de-DE') + " $";
 
 
    }
