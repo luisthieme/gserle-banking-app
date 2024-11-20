@@ -10,7 +10,7 @@
 <body class="main_background">
 
     <div class="heading">
-        <h1>Einfach und Schnell: Inflationsrate berechnen</h1>
+        <h1>Inflationsrate berechnen</h1>
     </div>
 
 
@@ -25,11 +25,18 @@
         </div>
 
         <div class="lower_side_bar">
-            <h4 style="text-decoration: underline;">Code und Quellen</h4>
+            <h4 style="text-decoration: underline;">Code und Quellen:</h4>
             <a class="link" href="Inflationsrechner.html">HTML Code</a><br>
             <a class="link" href="Inflationsrechner.css">CSS Code</a><br>
             <a class="link" href="Inflationsrechner.js">Javascript Code</a><br>
             <a class="link" href="Quellen.txt">Textquellen</a>
+        </div>
+
+        <div class="lower_side_bar">
+            <h4 style="text-decoration: underline;">Meine wichtigste Inspiration:</h4>
+            <a class="link" href="https://www.youtube.com/watch?v=ZzUsKizhb8o&list=PL_vkVwrwck3NJ9ajMQv7Y-DfX9gVAk5in">Hier der Link</a>
+            <p style="line-height: normal;">Entwickelt im Zuge der 5MINDS-AG von Ben. Diesen Text liest keiner, da er nur hier steht damit die Website ganz aussieht. Ja ja, was eine AG</p>
+
         </div>
     </div>
 
@@ -37,11 +44,11 @@
             <div class="Input_Field">
             <h3>Berechnung der zukünftigen Kaufkraft</h3>
             <p>Ursprungsbetrag</p> 
-            <input type="number" id="UB" min="0">  in Euro
+            <input class="Input_IN" type="number" id="UB" min="0" placeholder="Der Ursprungsbetrag ist...">  in Euro
             <p>Inflationsrate</p>
-            <input type="number" id="IR">  in %
+            <input class="Input_IN" type="number" id="IR" placeholder="Die Inflationsrate ist...">  in %
             <p>Zeitraum</p>
-            <input type="number" id="ZR" min="0">  in Jahren
+            <input class="Input_IN" type="number" id="ZR" min="0" placeholder="Der Zeitraum war...">  in Jahren
             <br>
             <br>
             <button class="Berechnen_Button" onclick="Zukunft_Kaufkraft(); document.getElementById('Output_Button').style.display='block'">Berechnen</button>

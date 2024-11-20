@@ -1,12 +1,14 @@
 .main_background {
-    background-color: rgb(255, 255, 255);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(89, 206, 245);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    zoom: 125%;
 }
 
 .heading {
     text-align: center;
     color: rgb(0, 0, 0);
     text-decoration: underline;
+    font-size: larger;
 }
 
 
@@ -15,18 +17,22 @@
     float: none;
     gap: 200px;
     display: flex;
-    background-color: rgb(179, 176, 191);
+    background-color: rgb(255, 255, 255);
     margin-left: 213px;
     border:2px solid rgb(16, 5, 110);
     border-radius: 12px;
     padding: 3px;
 }
 
+.Input_IN {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
 
 .lower_side_bar {
     float: left;
     margin-left: 0px;
-    background-color: rgb(179, 176, 191);
+    background-color: rgb(255, 255, 255);
     width: 200px;
     border: 2px solid rgb(16, 5, 110);
     border-radius: 12px;
@@ -44,14 +50,14 @@
     float: left;
     margin-left: 0px;
     width: 200px; 
-    background-color: rgb(179, 176, 191);
+    background-color: rgb(255, 255, 255);
     border:2px solid rgb(16, 5, 110);
     border-radius: 12px;
     padding:5px
 }
 
 .explanation {
-    background-color: rgb(179, 176, 191);
+    background-color: rgb(255, 255, 255);
     margin-left: 213px;
     border:2px solid rgb(16, 5, 110);
     border-radius: 12px;
@@ -60,7 +66,7 @@
 }
 
 .link-seiten {
-    background-color: rgb(179, 176, 191);
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -86,4 +92,8 @@
     margin: 6px 4px;
     cursor: pointer;
     line-height: 150%;
+}
+
+.Berechung {
+    font-size: x-large;
 }
