@@ -3,23 +3,21 @@ body {
     min-width: 1300px;
     position: absolute;
     white-space: normal;   
-    background-color: #1a334a;
+    background-color: #003261;
     font-size: 25px;
 }
 
 .boxEins {
-    background-color: #1e536e;    
-    border-radius: 50px;
+    background-color: #006391;    
     margin-left:300px;
-    color: #5aa5cd;
+    color: #8ed2ff;
 
 }
 
 .boxZwei {
-    background-color: #1e536e;    
-    border-radius: 25px;
+    background-color: #006391;    
     margin-left:300px;
-    color: #5aa5cd;
+    color: #8ed2ff;
 }
 
 input {
@@ -52,17 +50,17 @@ select:active {
 
 .buttonEins {
     width: 500px;
-    background-color: #361147;
+    background-color: #dab3ff;
     padding: 20px;
     border: none;
     border-radius: 25px;
-    color: #ab73b9;
+    color: #590083;
     font-size: 25px;
 }
 
 .buttonEins:active {
-    background-color: #739ab9; 
-    color: #113047;   
+    background-color: #a1d5ff; 
+    color: #00345c;   
 }
  
 .ulA {
@@ -72,10 +70,10 @@ select:active {
     scrollbar-width: 5px;
     width: 260px;
     height: 92%;
-    color: #1a334a;
+    color: #003261;
     position: fixed;
     padding-bottom: 40px;
-    background-image: linear-gradient(#1e536e, #896fa1);
+    background-image: linear-gradient(#006391, #003261);
     font-size: 17px;
 }
 
@@ -92,9 +90,9 @@ select:active {
   }
    
   ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #b6b6b6; 
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #74757a; 
+    background: #a0a0a0; 
   }
