@@ -1,65 +1,38 @@
+function berechnen() {
+    const ursprung = document.getElementById('Ursprung').value,
+        prozent = document.getElementById('Prozent').value,
+        zeit = document.getElementById('Zeit').value;
 
+    const zukünftige = document.getElementById('Zukünftige'),
+        kaufkraftverlust = document.getElementById('Kaufkraftverlust'),
+        zukünftigerPreis = document.getElementById('Zukünftiger-Preis'),
+        preissteigerung = document.getElementById('Preissteigerung');
 
-function berechnen(){
-const ursprung = document.getElementById('Ursprung'),
-      prozent = document.getElementById('Prozent'),
-      zeit = document.getElementById('Zeit');
+    console.log(ursprung);
+    if (isNaN(ursprung) || isNaN(prozent) || isNaN(zeit)) {
+        alert('Bitte alle Felder korrekt ausfühlen.');
+        return;
+    } else {
+        let zukünftige = ursprung / Math.pow(1 + prozent, zeit);
+        let kaufkraftverlust = ursprung - zukünftige;
+        let zukünftigerPreis = ursprung * Math.pow(1 + prozent, zeit);
+        let preissteigerung = (zukünftigerPreis / ursprung - 1) * 100;
 
-const zukünftige = document.getElementById('Zukünftige'),
-      kaufkraftverlust = document.getElementById('Kaufkraftverlust'),
-      zukünftigerPreis = document.getElementById('Zukünftiger-Preis'),
-      preissteigerung =document.getElementById('Preissteigerung');
-
-      if(isNaN(ursprung) || isNaN(prozent) || isNaN(zeit)){
-         alert("Bitte alle Felder korrekt ausfühlen.");
-         return;
-      } else {
-
-         let zukünftige = ursprung / Math.pow(1+prozent, zeit);
-         let kaufkraftverlust = ursprung - zukünftige;
-         let zukünftigerPreis = ursprung * Math.pow(1+prozent, zeit);
-         let preissteigerung = (zukünftigerPreis/ ursprung-1)*100;
-
-         document.getElementById("zukünftige").innerText = zukünftige.toFixed(2);
-         document.getElementById("kaufkraftverlust").innerText = kaufkraftverlust.toFixed(2);
-         document.getElementById("zukünftigerPreis").innerText = zzukünftigerPreis.toFixed(2);
-         document.getElementById("preissteigerung").innerText = preissteigerung.toFixed(2);
-      }
-
-
-
+        document.getElementById('zukünftige').innerText = zukünftige.toFixed(2);
+        document.getElementById('kaufkraftverlust').innerText = kaufkraftverlust.toFixed(2);
+        document.getElementById('zukünftigerPreis').innerText = zzukünftigerPreis.toFixed(2);
+        document.getElementById('preissteigerung').innerText = preissteigerung.toFixed(2);
+    }
 }
 
-
-function löschen(){
-   
-   document.getElementById("zukünftige").innerText = "";
-   document.getElementById("kaufkraftverlust").innerText = "";
-   document.getElementById("zukünftigerPreis").innerText = "";
-   document.getElementById("preissteigerung").innerText = "";
-
-
+function löschen() {
+    document.getElementById('zukünftige').innerText = '';
+    document.getElementById('kaufkraftverlust').innerText = '';
+    document.getElementById('zukünftigerPreis').innerText = '';
+    document.getElementById('preissteigerung').innerText = '';
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*  function berechnen(){
+/*  function berechnen(){
         let ursprung = parseFloat(document.getElementById("Ursprung").value);
         let prozent = parseFloat(document.getElementById("Prozent").value) / 100;
         let zeit = parseInt(document.getElementById("Zeit").value);
@@ -124,4 +97,4 @@ function löschen(){
    }
 }
 
-*/ 
+*/
