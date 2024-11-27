@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt Inflationsrechner</title>
     <link rel="stylesheet" href="main.css", href="Rechner.js">
+    <script>src="Rechner.js"</script>
 </head>
 <body class="Hintergrund">
 
@@ -53,6 +54,10 @@
     
     <div class="Rechner">
 
+        <div class="Berechnungsart" style="font-size: 400%;">
+          Was möchtest du berechnen
+        </div>
+
         <div class="Ursprungsbetrag" style="font-size:400%">
            Ursprungsbetrag
            <input type="number" placeholder="100$" style="font-size:80%" id="Ursprung">    
@@ -70,11 +75,11 @@
 
         <div class="Knöpfe">
 
-            <button class="Berechnen" style="font-size:400%" id="Br" onclick="Berechnen();">
+            <button class="Berechnen" style="font-size:400%" id="Br" onclick="berechnen()">
                Berechnen
             </button>
 
-            <button class="Löschen" style="font-size:400%" id="Ls" onclick="Löschen();">
+            <button class="Löschen" style="font-size:400%" id="Ls" onclick="löschen()">
                Löschen
             </button>
 
@@ -109,27 +114,6 @@
         </div>
 
     </div>
-
-
-<script>
-   function Berechnen(){
-      if(isNaN(ursprung) || isNaN(prozent) || isNaN(zeit)){
-         alert("Bitte alle Felder korrekt ausfühlen.");
-         return;
-      } else {
-
-         let zukünftige = ursprung / Math.pow(1+prozent, zeit);
-         let kaufkraftverlust = ursprung - zukünftige;
-         let zukünftigerPreis = ursprung * Math.pow(1+prozent, zeit);
-         let preissteigerung = (zukünftigerPreis/ ursprung-1)*100;
-
-         document.getElementById("zukünftige").innerText = zukünftige.toFixed(2);
-         document.getElementById("kaufkraftverlust").innerText = kaufkraftverlust.toFixed(2);
-         document.getElementById("zukünftigerPreis").innerText = zzukünftigerPreis.toFixed(2);
-         document.getElementById("preissteigerung").innerText = preissteigerung.toFixed(2);
-      }
-   }
-</script>
 
 
 

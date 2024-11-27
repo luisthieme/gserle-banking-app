@@ -1,3 +1,6 @@
+
+
+function berechnen(){
 const ursprung = document.getElementById('Ursprung'),
       prozent = document.getElementById('Prozent'),
       zeit = document.getElementById('Zeit');
@@ -7,8 +10,6 @@ const zukünftige = document.getElementById('Zukünftige'),
       zukünftigerPreis = document.getElementById('Zukünftiger-Preis'),
       preissteigerung =document.getElementById('Preissteigerung');
 
-document.querySelector('.Knöpfe').onclick = (Event)=> {
-   if(!Event.target.classList.Contains('Br')){
       if(isNaN(ursprung) || isNaN(prozent) || isNaN(zeit)){
          alert("Bitte alle Felder korrekt ausfühlen.");
          return;
@@ -24,15 +25,22 @@ document.querySelector('.Knöpfe').onclick = (Event)=> {
          document.getElementById("zukünftigerPreis").innerText = zzukünftigerPreis.toFixed(2);
          document.getElementById("preissteigerung").innerText = preissteigerung.toFixed(2);
       }
-   }
-   if(Event.target.classList.Contains('Ls')){
-      document.getElementById("zukünftige").innerText = "";
-      document.getElementById("kaufkraftverlust").innerText = "";
-      document.getElementById("zukünftigerPreis").innerText = "";
-      document.getElementById("preissteigerung").innerText = "";
 
-   }
+
+
 }
+
+
+function löschen(){
+   document.getElementById("zukünftige").innerText = "";
+   document.getElementById("kaufkraftverlust").innerText = "";
+   document.getElementById("zukünftigerPreis").innerText = "";
+   document.getElementById("preissteigerung").innerText = "";
+
+
+}
+
+
 
 
 
@@ -82,5 +90,37 @@ document.querySelector('.Knöpfe').onclick = (Event)=> {
         document.getElementById("Zukünftiger-Preis").value = "";
         document.getElementById("Preissteigerung").value = "";
     }
+
+
+
+
+
+
+    document.querySelector('.Knöpfe').onclick = (Event)=> {
+   if(!Event.target.classList.Contains('Br')){
+      if(isNaN(ursprung) || isNaN(prozent) || isNaN(zeit)){
+         alert("Bitte alle Felder korrekt ausfühlen.");
+         return;
+      } else {
+
+         let zukünftige = ursprung / Math.pow(1+prozent, zeit);
+         let kaufkraftverlust = ursprung - zukünftige;
+         let zukünftigerPreis = ursprung * Math.pow(1+prozent, zeit);
+         let preissteigerung = (zukünftigerPreis/ ursprung-1)*100;
+
+         document.getElementById("zukünftige").innerText = zukünftige.toFixed(2);
+         document.getElementById("kaufkraftverlust").innerText = kaufkraftverlust.toFixed(2);
+         document.getElementById("zukünftigerPreis").innerText = zzukünftigerPreis.toFixed(2);
+         document.getElementById("preissteigerung").innerText = preissteigerung.toFixed(2);
+      }
+   }
+   if(Event.target.classList.Contains('Ls')){
+      document.getElementById("zukünftige").innerText = "";
+      document.getElementById("kaufkraftverlust").innerText = "";
+      document.getElementById("zukünftigerPreis").innerText = "";
+      document.getElementById("preissteigerung").innerText = "";
+
+   }
+}
 
 */ 
