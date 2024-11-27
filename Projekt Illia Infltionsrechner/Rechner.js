@@ -32,6 +32,7 @@ const zukünftige = document.getElementById('Zukünftige'),
 
 
 function löschen(){
+   
    document.getElementById("zukünftige").innerText = "";
    document.getElementById("kaufkraftverlust").innerText = "";
    document.getElementById("zukünftigerPreis").innerText = "";
