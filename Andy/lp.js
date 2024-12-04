@@ -13,24 +13,24 @@ function InflationBestimmen() {
     if(document.getElementById("Inflationa").checked)    {
         document.getElementById("Inflation").style.display = "block";
         document.getElementById("Inflationsrate").style.display = "block";
-
+        document.getElementById("InflationProzentZeichen").style.display = "block";
     }
     else {
         document.getElementById("Inflation").style.display = "none";
         document.getElementById("Inflationsrate").style.display = "none";
-
+        document.getElementById("InflationProzentZeichen").style.display = "none";
     }
 }
 function KapitalVerzeherBestimmen() {
     if(document.getElementById("Kapitalverzehrer").checked)    {
         document.getElementById("Kapitalverzehr").style.display = "block";
         document.getElementById("Lebenserwartung").style.display = "block";
-
+        document.getElementById("KapitalverzehrJahreZeichen").style.display = "block";
     }
     else {
         document.getElementById("Kapitalverzehr").style.display = "none";
         document.getElementById("Lebenserwartung").style.display = "none";
-
+        document.getElementById("KapitalverzehrJahreZeichen").style.display = "none";
     }
 }
 function berechnen(){

@@ -95,7 +95,9 @@ input[type="checkbox"]:checked::before {
     align-items: center;
 
 }
-
+.Zeichen{
+    display: flex;
+}
 .Zeichen span {
     color: rgb(89, 89, 89);
     position: absolute;
