@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Projekt Inflationsrechner</title>
-        <link rel="stylesheet" href="main.css" , href="Rechner.js" />
-        <script src="Rechner.js"></script>
-    </head>
-    <body class="Hintergrund">
-        <div class="Überschrift" style="font-size: 600%">Inflationsrechner: Kaufkraft & Co. einfach berechnen</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt Inflationsrechner</title>
+    <link rel="stylesheet" href="main.css" , href="Rechner.js" />
+    <script src="Rechner.js"></script>
+  </head>
+  <body class="Hintergrund">
+    <div class="Überschrift" style="font-size: 600%">
+      Inflationsrechner: Kaufkraft & Co. einfach berechnen
+    </div>
 
-        <div class="Informationstext" style="font-size: 310%">
-            Inflation muss nichts Schlechtes sein. Ein moderater Anstieg der Preise ist sogar üblich und für die
-            Wirtschaft vorteilhaft. Dennoch spricht man davon, der Inflation "entgegenarbeiten" zu müssen oder dass
-            Erspartes auf dem Tagesgeldkonto "aufgefressen" wird. Mit unserem Inflationsrechner kannst du genau
-            bestimmen, wie sich die Veränderung des Preisniveaus auf die Kaufkraft deines Geldes auswirkt.
-        </div>
+    <div class="Informationstext" style="font-size: 310%">
+      Inflation muss nichts Schlechtes sein. Ein moderater Anstieg der Preise
+      ist sogar üblich und für die Wirtschaft vorteilhaft. Dennoch spricht man
+      davon, der Inflation "entgegenarbeiten" zu müssen oder dass Erspartes auf
+      dem Tagesgeldkonto "aufgefressen" wird. Mit diesem Inflationsrechner
+      kannst du genau bestimmen, wie sich die Veränderung des Preisniveaus auf
+      die Kaufkraft deines Geldes auswirkt.
+    </div>
 
-        <!--  <div class="Auswahlfeld">
+    <!--  <div class="Auswahlfeld">
        <p class="Zinsrechner" onclick="document.location = 'default.asp'" style="font-size: 300%;">
          Zinsrechner
        </p>
@@ -47,51 +51,96 @@
        </p>
     </div> -->
 
-        <div class="Rechner">
-            <div class="Berechnungsart" style="font-size: 400%">Was möchtest du berechnen</div>
+    <div class="Rechner">
+      <div class="Berechnungsart" style="font-size: 400%">
+        <!--
+        Was möchtest du berechnen
 
-            <div class="Ursprungsbetrag" style="font-size: 400%">
-                Ursprungsbetrag
-                <input type="number" placeholder="100$" style="font-size: 80%" id="Ursprung" />
-            </div>
 
-            <div class="Inflationsrate" style="font-size: 400%">
-                Inflationsrate in Prozent
-                <input type="number" placeholder="2%" style="font-size: 80%" id="Prozent" />
-            </div>
+        <ul class="Berechnen_menu">
+          <li>
+            <a href="">Zukünftige-Kaufkraft</a>
+            <ul>
+              <li><a href="">Zukünftige-Kaufkraft</a></li>
+              <li><a href="">Ursprungsbetrag</a></li>
+              <li><a href="">Inflationsrate</a></li>
+              <li><a href="">Zeitraum</a></li>
+            </ul>
+          </li>
+        </ul> -->
+      </div>
 
-            <div class="Zeitraum" style="font-size: 400%">
-                Zeitraum in Jahren
-                <input type="number" placeholder="10 Jahren" style="font-size: 80%" id="Zeit" />
-            </div>
+      <div class="Ursprungsbetrag" style="font-size: 400%">
+        Ursprungsbetrag
+        <input
+          type="number"
+          placeholder="100$"
+          style="font-size: 60%"
+          id="Ursprung"
+        />
+      </div>
 
-            <div class="Knöpfe">
-                <button class="Berechnen" style="font-size: 400%" id="berechnen" onclick="berechnen()">Berechnen</button>
+      <div class="Inflationsrate" style="font-size: 400%">
+        Inflationsrate als Dezimalzahl
+        <input
+          type="number"
+          placeholder="2%"
+          style="font-size: 60%"
+          id="Prozent"
+        />
+      </div>
 
-                <button class="Löschen" style="font-size: 400%" id="löschen" onclick="löschen()">Löschen</button>
-            </div>
-        </div>
+      <div class="Zeitraum" style="font-size: 400%">
+        Zeitraum in Jahren
+        <input
+          type="number"
+          placeholder="10 Jahren"
+          style="font-size: 60%"
+          id="Zeit"
+        />
+      </div>
 
-        <div class="Ausgabefeld">
-            <div class="Zukünftige-Kaufkraft" style="font-size: 400%">
-                Zukünftige-Kaufkraft
-                <output id="zukünftige" style="background-color: white"> </output>
-            </div>
+      <div class="Knöpfe">
+        <button
+          class="Berechnen"
+          style="font-size: 400%"
+          id="berechnen"
+          onclick="berechnen()"
+        >
+          Berechnen
+        </button>
 
-            <div class="Kaufkraftverlust" style="font-size: 400%">
-                Kaufkraftverlust
-                <output id="kaufkraftverlust" style="background-color: white"> </output>
-            </div>
+        <button
+          class="Löschen"
+          style="font-size: 400%"
+          id="löschen"
+          onclick="löschen()"
+        >
+          Löschen
+        </button>
+      </div>
+    </div>
 
-            <div class="Zukünftiger-Preis" style="font-size: 400%">
-                Zukünftiger-Preis
-                <output id="zukünftigerPreis" style="background-color: white"> </output>
-            </div>
+    <div class="Ausgabefeld">
+      <div class="Zukünftige-Kaufkraft" style="font-size: 400%">
+        Zukünftige-Kaufkraft
+        <output id="zukünftige" style="background-color: white"> </output>
+      </div>
 
-            <div class="Preissteigerung" style="font-size: 400%">
-                Preissteigerung
-                <output id="preissteigerung" style="background-color: white"> </output>
-            </div>
-        </div>
-    </body>
+      <div class="Kaufkraftverlust" style="font-size: 400%">
+        Kaufkraftverlust in Prozent
+        <output id="kaufkraftverlust" style="background-color: white"> </output>
+      </div>
+
+      <div class="Zukünftiger-Preis" style="font-size: 400%">
+        Zukünftiger-Preis
+        <output id="zukünftigerPreis" style="background-color: white"> </output>
+      </div>
+
+      <div class="Preissteigerung" style="font-size: 400%">
+        Preissteigerung in Prozent
+        <output id="preissteigerung" style="background-color: white"> </output>
+      </div>
+    </div>
+  </body>
 </html>

@@ -10,16 +10,18 @@ function berechnen() {
 
   console.log(ursprung);
   if (isNaN(ursprung) || isNaN(prozent) || isNaN(zeit)) {
-    alert("Bitte alle Felder korrekt ausfühlen.");
+    alert("Bitte alle Felder korrekt ausfüllen.");
     return;
   } else {
-    let zukünftige = ursprung / Math.pow(1 + Number(prozent), Number(zeit));
+    let zukünftige = ursprung * Math.pow(1 - Number(prozent), Number(zeit));
     console.log(zukünftige, zeit, prozent);
-    let kaufkraftverlust = ursprung - zukünftige;
-    let zukünftigerPreis = ursprung * Math.pow(1 + prozent, zeit);
-    let preissteigerung = (zukünftigerPreis / ursprung - 1) * 100;
+    let kaufkraftverlust =
+      1 - Math.pow(1 - Number(prozent), Number(zeit)) * 100;
+    let zukünftigerPreis =
+      ursprung * Math.pow(1 + Number(prozent), Number(zeit));
+    let preissteigerung = Math.pow(1 + Number(prozent), Number(zeit) - 1) * 100;
 
-    document.getElementById("zukünftige").innerText = zukünftige;
+    document.getElementById("zukünftige").innerText = zukünftige.toFixed(4);
     document.getElementById("kaufkraftverlust").innerText =
       kaufkraftverlust.toFixed(2);
     document.getElementById("zukünftigerPreis").innerText =

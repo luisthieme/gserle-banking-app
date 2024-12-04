@@ -1,155 +1,184 @@
-.Hintergrund{
-    background-color: rgb(62, 3, 170);
+.Hintergrund {
+  background-color: rgb(101, 48, 199);
 }
 
 .Überschrift {
-    margin-left: 150px;
-    background-color: rgb(3, 3, 158);
+  margin-left: 150px;
+  background-color: rgb(3, 3, 158);
+  text-align: center;
+  width: 1550px;
+  height: 220px;
+  border-radius: 20px;
+  color: rgb(255, 204, 0);
+}
+
+.Informationstext {
+  margin-top: 100px;
+  margin-left: 350px;
+  background-color: rgb(3, 3, 158);
+  color: rgb(255, 204, 0);
+  text-align: center;
+  width: 1282px;
+  height: 420px;
+  border-radius: 20px;
+}
+
+/*.Berechnungsart {
+  width: 1282px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: rgb(65, 65, 169);
+  color: rgb(150, 223, 243);
+}*/
+
+.Rechner {
+  margin-top: 20px;
+  margin-left: 350px;
+  width: 1282px;
+  height: 800px;
+  border-radius: 20px;
+  background-color: rgb(4, 4, 82);
+}
+
+.Ursprungsbetrag {
+  width: 1282px;
+  height: 160px;
+  border-radius: 20px;
+  background-color: rgb(3, 3, 158);
+  color: rgb(255, 204, 0);
+}
+
+.Inflationsrate {
+  margin-top: 10px;
+  width: 1282px;
+  height: 160px;
+  border-radius: 20px;
+  background-color: rgb(3, 3, 158);
+  color: rgb(255, 204, 0);
+}
+
+.Zeitraum {
+  margin-top: 10px;
+  width: 1282px;
+  height: 160px;
+  border-radius: 20px;
+  background-color: rgb(3, 3, 158);
+  color: rgb(255, 204, 0);
+}
+
+.Knöpfe {
+  margin-top: 10px;
+  width: 1282px;
+  height: 160px;
+  border-radius: 20px;
+}
+
+.Löschen {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 600px;
+  height: 150px;
+  border-radius: 20px;
+  background-color: gray;
+  text-align: center;
+  line-height: 160px;
+  font-size: 100%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.Löschen:hover {
+  background-color: red;
+}
+
+.Berechnen {
+  margin-left: 10px;
+  width: 600px;
+  height: 150px;
+  border-radius: 20px;
+  background-color: blue;
+  text-align: center;
+  line-height: 160px;
+  font-size: 100%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.Berechnen:hover {
+  background-color: green;
+}
+
+.Ausgabefeld {
+  margin-top: 20px;
+  margin-left: 350px;
+  width: 1282px;
+  height: 710px;
+  border-radius: 20px;
+  background-color: rgb(4, 4, 82);
+}
+
+.Zukünftige-Kaufkraft {
+  margin-top: 20px;
+  width: 1282px;
+  height: 160px;
+  border-radius: 20px;
+  background-color: rgb(3, 3, 158);
+  color: rgb(255, 204, 0);
+}
+
+.Kaufkraftverlust {
+  margin-top: 20px;
+  width: 1282px;
+  height: 160px;
+  border-radius: 20px;
+  background-color: rgb(3, 3, 158);
+  color: rgb(255, 204, 0);
+}
+
+.Zukünftiger-Preis {
+  margin-top: 20px;
+  width: 1282px;
+  height: 160px;
+  border-radius: 20px;
+  background-color: rgb(3, 3, 158);
+  color: rgb(255, 204, 0);
+}
+
+.Preissteigerung {
+  margin-top: 20px;
+  width: 1282px;
+  height: 160px;
+  border-radius: 20px;
+  background-color: rgb(3, 3, 158);
+  color: rgb(255, 204, 0);
+}
+
+/*.Berechnen_menu {
+  display: flex;
+}
+
+.Berechnen_menu li {
+  width: 200px;
+  list-style: none;
+}
+
+.Berechnen_menu a{
+    color: rgb(150, 223, 243);
+    text-decoration: none;
+    display: block;
     text-align: center;
-    width: 1550px;
-    height: 220px;
-    border-radius: 20px;
-    color: rgb(150, 223, 243);
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    transition: all ;
+}
+.Berechnen_menu li:hover ul {
+  display: block;
+  background: #808291;
 }
 
-.Informationstext{
-    margin-top: 100px;
-    margin-left: 500px;
-    background-color: rgb(3, 3, 158);
-    text-align: center;
-    width: 1282px;
-    height: 420px;
-    border-radius: 20px;
-    color: rgb(150, 223, 243);
+.Berechnen_menu{
+    position: absolute;
+    left: 0;
 }
-
-.Auswahlfeld{
-    margin-top: 20px;
-    width: 400px;
-    height: 300px;
-    border-radius: 20px;
-    background-color: rgb(4, 4, 82);
-    color: rgb(150, 223, 243);
-}
-
-.Rechner{
-    margin-top: 20px;
-    margin-left: 500px;
-    width: 1282px;
-    height: 1000px;
-    border-radius: 20px;
-    background-color: rgb(4, 4, 82);
-}
-
-.Ursprungsbetrag{
-    width: 1282px;
-    height: 160px;
-    border-radius: 20px;
-    background-color: rgb(3, 3, 158);
-    color: rgb(150, 223, 243);
-}
-
-.Inflationsrate{
-    margin-top: 10px;
-    width: 1282px;
-    height: 160px;
-    border-radius: 20px;
-    background-color: rgb(3, 3, 158);
-    color: rgb(150, 223, 243);
-}
-
-.Zeitraum{
-    margin-top: 10px;
-    width: 1282px;
-    height: 160px;
-    border-radius: 20px;
-    background-color:  rgb(3, 3, 158);
-    color: rgb(150, 223, 243);
-}
-
-.Knöpfe{
-    margin-top: 10px;
-    width: 1282px;
-    height: 160px;
-    border-radius: 20px;
-}
-
-.Löschen{
-    margin-top: 10px;
-    margin-left: 10px;
-    width: 600px;
-    height: 150px;
-    border-radius: 20px;
-    background-color: gray;
-    text-align: center;
-    line-height: 160px;
-    font-size: 100%;
-    cursor: pointer;
-    user-select: none;
-}
-
-.Löschen:hover{
-    background-color: red;
-}
-
-.Berechnen{
-    margin-left: 10px;
-    width: 600px;
-    height: 150px;
-    border-radius: 20px;
-    background-color: blue;
-    text-align: center;
-    line-height: 160px;
-    font-size: 100%;
-    cursor: pointer;
-    user-select: none;
-}
-
-.Berechnen:hover{
-    background-color: green;
-}
-
-.Ausgabefeld{
-    margin-top: 20px;
-    margin-left: 500px;
-    width: 1282px;
-    height: 710px;
-    border-radius: 20px;
-    background-color: rgb(4, 4, 82);
-}
-
-.Zukünftige-Kaufkraft{
-    margin-top: 20px;
-    width: 1282px;
-    height: 160px;
-    border-radius: 20px;
-    background-color:  rgb(3, 3, 158);
-    color: rgb(150, 223, 243);
-}
-
-.Kaufkraftverlust{
-    margin-top: 20px;
-    width: 1282px;
-    height: 160px;
-    border-radius: 20px;
-    background-color:  rgb(3, 3, 158);
-    color: rgb(150, 223, 243);
-}
-
-.Zukünftiger-Preis{
-    margin-top: 20px;
-    width: 1282px;
-    height: 160px;
-    border-radius: 20px;
-    background-color:  rgb(3, 3, 158);
-    color: rgb(150, 223, 243);
-}
-
-.Preissteigerung{
-    margin-top: 20px;
-    width: 1282px;
-    height: 160px;
-    border-radius: 20px;
-    background-color:  rgb(3, 3, 158);
-    color: rgb(150, 223, 243);
-}
+*/
