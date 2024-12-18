@@ -30,3 +30,9 @@ Der Kurs ist nach der Anmeldung verpflichtend für ein Halbjahr. Er findet jeden
 -   Finanzielle Freiheit Rechner (Hard)
 -   Simpler Rentenpunkte Rechner (Hard)
 -   Humankapital Rechner (Hard)
+
+### Webistes
+
+-   Zoe: https://finanzielleziele.w3spaces.com
+-   Tudor: https://rechner-test.w3spaces.com
+-   Illia: https://illiarechner.w3spaces.com
